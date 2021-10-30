@@ -1,0 +1,78 @@
+/* General Styles */
+
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Arial;
+	background: #aaa;
+}
+h2 {
+	font-weight: normal;
+	margin:  0;
+}
+.button {
+	background: #45a5ff;
+	color: black;
+	border-radius: 14px;
+	text-decoration: none;
+	padding: 8px 24px;
+	margin: 0 10px;
+	font-weight: bold;
+	font-size: 14px;
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* specific styles  */
+
+.gridContainer {
+	display: grid;
+	grid-template: auto 1fr auto / auto 1fr auto;
+	margin: 10px;
+	border-radius: 10px;
+	color:  white;
+	text-align: center;
+	height: 95%;
+}
+.header {
+	background: #1d8217;
+	border-radius: 10px 10px 0 0;
+	padding: 0 10px 20px;
+}
+.header .nav {
+	margin-top: 20px;
+}
+.header, .footer {
+	grid-column: 1 / 4;
+}
+.leftSide, .rightSide {
+	padding: 10px 4rem;
+	background: #ad6a3d;
+}
+.leftSide .sideNav a {
+	display: block;
+	margin: 16px 0;
+}
+.mainContent {
+	background: #3e4e59;
+	overflow-y: auto;
+	padding: 30px;
+}
+.mainContent p {
+	font-size: 1.125em;
+}
+.mainContent p.small {
+	font-size: 0.875em;
+}
+.footer {
+	background: #1d8217;
+	padding: 15px 0 20px;
+	border-radius: 0 0 10px 10px;
+}
+.footer a {
+	color: white;
+	margin: 0 15px;
+}
