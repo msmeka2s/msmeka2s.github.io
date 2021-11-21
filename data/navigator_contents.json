@@ -1,0 +1,290 @@
+{
+  "Übung 1": {
+    "Übung 1.3 (Tribute Page)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Tribute Page</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t\ttext-align: center;\n\t\t\t}\n\t\t\t.header {\n\t\t\t\tbackground: #eee;\n\t\t\t\tpadding:  20px 0 10px;\n\t\t\t}\n\t\t\t.imageContent {\n\t\t\t\tpadding:  0 20px;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"header\">\n\t\t\t<h1>Dr. Norman Borlaug</h1>\n\t\t\t<p>The man who saved a billion lives</p>\n\t\t</div>\n\t\t<div class=\"imageContent\">\n\t\t\t<img alt=\"tribute-img\" src=\"/wem/assets/img/tribute-img.png\" />\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML"]
+    },
+    "Übung 1.4 (Survey Form)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Survey Form</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t\ttext-align: center;\n\t\t\t}\n\t\t\t.formContainer {\n\t\t\t\tbackground: #b2d6d1;\n\t\t\t\tpadding-top: 20px;\n\t\t\t}\n\t\t\t.formContainer h1 {\n\t\t\t\tmargin: 0 0 20px;\n\t\t\t}\n\t\t\t.formContainer form {\n\t\t\t\tmargin: 0 50px;\n\t\t\t\tbackground: #FAFAFA;\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 20px 0;\n\t\t\t}\n\t\t\t.formContainer form .row {\n\t\t\t\tdisplay:  flex;\n\t\t\t\tmargin-bottom: 20px;\n\t\t\t\tfont-size: 1.2em;\n\t\t\t}\n\t\t\t.formContainer form .row > * {\n\t\t\t\tmargin: 0 10px;\n\t\t\t}\n\t\t\t.formContainer form .row > label {\n\t\t\t    width: 50%;\n\t\t\t    text-align: right;\n\t\t\t}\n\t\t\t.formContainer form .row > input {\n\t\t\t\twidth: 25%;\n\t\t\t\tpadding: 6px 4px;\n\t\t\t}\n\t\t\t.formContainer form .row > select {\n\t\t\t\twidth: 12%;\n\t\t\t\tpadding: 6px 4px;\n\t\t\t}\n\t\t\t.formContainer form .row > .options {\n\t\t\t\ttext-align: left;\n\t\t\t}\n\t\t\t.formContainer form .row > .options > div {\n\t\t\t\tmargin-bottom: 5px;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"formContainer\">\n\t\t\t<h1>Survey Form</h1>\n\t\t\t<form>\n\t\t\t\t<p>Let us know how we can improve freeCodeCamp</p>\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<label for=\"name\">* Name:</label>\n\t\t\t\t\t<input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Enter your name\" />\n\t\t\t\t</div>\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<label for=\"email\">* Email:</label>\n\t\t\t\t\t<input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Enter your Email\" />\n\t\t\t\t</div>\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<label for=\"age\">* Age:</label>\n\t\t\t\t\t<input type=\"number\" id=\"age\" name=\"age\" placeholder=\"Age\" />\n\t\t\t\t</div>\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<label for=\"role\">Which option best describes your current role?</label>\n\t\t\t\t\t<select id=\"role\" name=\"role\">\n\t\t\t\t\t\t<option value=\"student\">Student</option>\n\t\t\t\t\t\t<option value=\"teacher\">Teacher</option>\n\t\t\t\t\t</select>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<label for=\"age\">* How likely is that your would recommend freeCodeCamp to a friend?</label>\n\t\t\t\t\t<div class=\"options\">\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t  <input type=\"radio\" id=\"definitely\" name=\"recommend\" value=\"definitely\">\n\t\t\t\t\t\t  <label for=\"definitely\">Definitely</label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t  <input type=\"radio\" id=\"maybe\" name=\"recommend\" value=\"maybe\">\n\t\t\t\t\t\t  <label for=\"maybe\">Maybe</label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t  <input type=\"radio\" id=\"notSure\" name=\"recommend\" value=\"notSure\">\n\t\t\t\t\t\t  <label for=\"notSure\">Not sure</label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<label for=\"age\">What do you like most in FCC:</label>\n\t\t\t\t\t<select id=\"fcc\" name=\"fcc\">\n\t\t\t\t\t\t<option value=\"\">Select an option</option>\n\t\t\t\t\t\t<option value=\"option1\">Option 1</option>\n\t\t\t\t\t</select>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<label for=\"age\">Things that should be improved in the future <br> (Check all that apply):</label>\n\t\t\t\t\t<div class=\"options\">\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t  <input type=\"checkbox\" id=\"frontend\" name=\"improve\" value=\"frontend\">\n\t\t\t\t\t\t  <label for=\"frontend\">Front-end Projects</label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t  <input type=\"checkbox\" id=\"backend\" name=\"improve\" value=\"backend\">\n\t\t\t\t\t\t  <label for=\"backend\">Back-end Projects</label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t  <input type=\"checkbox\" id=\"dataVisualization\" name=\"improve\" value=\"dataVisualization\">\n\t\t\t\t\t\t  <label for=\"dataVisualization\">Data Visualization</label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</form>\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML"]
+    },
+    "Übung 1.5 (Product Landing Page)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Product Landing Page</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t}\n\t\t\t.button {\n\t\t\t\ttext-decoration: none;\n\t\t\t\tbackground: #F88E37;\n\t\t\t\tcolor: white;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 10px;\n\t\t\t\twidth:  50%;\n\t\t\t\tdisplay: block;\n\t\t\t\ttext-align: center;\n\t\t\t\tfont-weight: bold;\n\t\t\t\tmargin:  0 auto;\n\t\t\t}\n\t\t\t.header {\n\t\t\t\tbackground: #363636;\n\t\t\t\ttext-align: center;\n\t\t\t\tpadding: 20px 0;\n\t\t\t}\n\t\t\t.header a {\n\t\t\t\tcolor: white;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tmargin: 0 10px;\n\t\t\t}\n\t\t\t.mainContent {\n\t\t\t\tbackground: #EBEAE6;\n\t\t\t\tpadding: 20px 0 10px;\n\t\t\t}\n\t\t\t.mainContent h1 {\n\t\t\t\tmargin: 0 0 20px;\n\t\t\t\ttext-align: center;\n\t\t\t}\n\t\t\t.mainContent .product {\n\t\t\t\tdisplay: flex;\n\t\t\t}\n\t\t\t.mainContent .product > * {\n\t\t\t\twidth: 50%;\n\t\t\t}\n\t\t\t.mainContent .product .imgContainer {\n\t\t\t\tpadding-left: 80px;\n\t\t\t}\n\t\t\t.mainContent .product .imgContainer img {\n\t\t\t\tborder-radius: 10px;\n\t\t\t\tborder: 1px solid #000;\n\t\t\t\tmax-width: 100%;\n\t\t\t}\n\t\t\t.mainContent .product .info {\n\t\t\t\ttext-align: center;\n\t\t\t\tpadding-top: 20px;\n\t\t\t}\n\t\t\t.mainContent .product .info p {\n\t\t\t\tmargin:  50px 0;\n\t\t\t}\n\t\t\t.footer {\n\t\t\t\ttext-align: center;\n\t\t\t\tbackground: #011826;\n\t\t\t\tcolor: white;\n\t\t\t\tpadding:  30px 0;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"header\">\n\t\t\t<div class=\"nav\">\n\t\t\t\t<a href=\"#\">The book series</a>\n\t\t\t\t<a href=\"#\">Textimonials</a>\n\t\t\t\t<a href=\"#\">The Author</a>\n\t\t\t\t<a href=\"#\">Free resources</a>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"mainContent\">\n\t\t\t<h1>You dont know JavScript</h1>\n\t\t\t<div class=\"product\">\n\t\t\t\t<div class=\"imgContainer\">\n\t\t\t\t\t<img alt=\"product-cover\" src=\"wem/assets/img/landing-img.png\" />\n\t\t\t\t</div>\n\t\t\t\t<div class=\"info\">\n\t\t\t\t\t<p>Don't just drift through Javascript.</p>\n\t\t\t\t\t<p>Understand how Javascript works</p>\n\t\t\t\t\t<p>Start your journey through the bumpy side of Javascript</p>\n\t\t\t\t\t<a href=\"#\" class=\"button\">Order your copy now</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"footer\">\n\t\t\t<p>The first ebook in the book series is absolutely free.</p>\n\t\t\t<a href=\"#\" class=\"button\">Find out more about this offer</a>\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML"]
+    }
+  },
+  "Übung 2": {
+    "Übung 2.1 (Flexbox)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Responsiv mit Flexbox Desktop-First</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\n\t\t<style type=\"text/css\">\n\t\t\tbody {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\thtml, body, .content {\n\t\t\t\theight: 100%;\n\t\t\t}\n\t\t\t.content {\n\t\t\t\tmargin: 20px 40px;\n\t\t\t}\n\t\t\t.flexContainer {\n\t\t\t\tdisplay: flex;\n\t\t\t}\n\t\t\t.flexContainer.topbar {\n\t\t\t\theight: 30%;\n\t\t\t}\n\t\t\t.flexContainer.mainContent {\n\t\t\t\theight: 60%;\n\t\t\t\tgap: 10px;\n\t\t\t\tmargin-top: 20px;\n\t\t\t}\n\t\t\t.redSquare {\n\t\t\t\tbackground: red;\n\t\t\t\tflex-basis: 100%;\n\t\t\t}\n\t\t\t.greenSquare {\n\t\t\t\tbackground: #0f0;\n\t\t\t\tflex-basis: 20%;\n\t\t\t}\n\t\t\t.blueSquare {\n\t\t\t\tbackground: blue;\n\t\t\t\tflex-basis: 60%;\n\t\t\t}\n\t\t\t.violetSquare {\n\t\t\t\tbackground: violet;\n\t\t\t\tflex-basis: 20%;\n\t\t\t}\n\t\t\t@media (max-width: 768px) {\n\t\t\t\t.content {\n\t\t\t\t\tmargin: 40px 20px;\n\t\t\t\t}\n\t\t\t\t.flexContainer.mainContent {\n\t\t\t\t\tflex-wrap: wrap;\n\t\t\t\t\tjustify-content: space-between;\n\t\t\t\t\theight: 120%;\n\t\t\t\t\tgap: 4px;\n\t\t\t\t}\n\t\t\t\t.greenSquare {\n\t\t\t\t\tflex-basis: 32%;\n\t\t\t\t\theight: 100%;\n\t\t\t\t}\n\t\t\t\t.blueSquare {\n\t\t\t\t\tflex-basis: 66%;\n\t\t\t\t}\n\t\t\t\t.violetSquare {\n\t\t\t\t\tflex-basis: 100%;\n\t\t\t\t\theight: 20%;\n\t\t\t\t}\n\t\t\t}\n\t\t\t@media (max-width: 375px) {\n\t\t\t\t.content {\n\t\t\t\t\tmargin: 0;\n\t\t\t\t}\n\t\t\t\t.flexContainer.topbar {\n\t\t\t\t\theight: 20%;\n\t\t\t\t}\n\t\t\t\t.flexContainer.mainContent {\n\t\t\t\t\tmargin-top: 0;\n\t\t\t\t\tgap: 0;\n\t\t\t\t}\n\t\t\t\t.redSquare {\n\t\t\t\t\theight: 100%;\n\t\t\t\t}\n\t\t\t\t.greenSquare {\n\t\t\t\t\tflex-basis: 100%;\n\t\t\t\t\theight: 20%;\n\t\t\t\t}\n\t\t\t\t.blueSquare {\n\t\t\t\t\tflex-basis: 100%;\n\t\t\t\t\theight: 120%;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"content\">\n\t\t\t<div class=\"flexContainer topbar\">\n\t\t\t\t<div class=\"redSquare\">&nbsp;</div>\n\t\t\t</div>\n\t\t\t<div class=\"flexContainer mainContent\">\n\t\t\t\t<div class=\"greenSquare\">&nbsp;</div>\n\t\t\t\t<div class=\"blueSquare\">&nbsp;</div>\n\t\t\t\t<div class=\"violetSquare\">&nbsp;</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS"]
+    },
+    "Übung 2.2 (Grid)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Responsiv mit Flexbox Desktop-First</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\n\t\t<style type=\"text/css\">\n\t\t\tbody {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\thtml, body, .gridContainer {\n\t\t\t\theight: 100%;\n\t\t\t}\n\t\t\t.gridContainer {\n\t\t\t\tdisplay: grid;\n\t\t\t\tgrid-template-rows: 20% 20% 120% 20%;\n\t\t\t}\n\t\t\t.redSquare {\n\t\t\t\tbackground: red;\n\t\t\t}\n\t\t\t.greenSquare {\n\t\t\t\tbackground: #0f0;\n\t\t\t}\n\t\t\t.blueSquare {\n\t\t\t\tbackground: blue;\n\t\t\t}\n\t\t\t.violetSquare {\n\t\t\t\tbackground: violet;\n\t\t\t}\n\t\t\t@media (min-width: 375px) {\n\t\t\t\t.gridContainer {\n\t\t\t\t\tgrid-template-columns: 33% 66%;\n\t\t\t\t\tgrid-template-rows: 25% 100% 20%;\n\t\t\t\t\tcolumn-gap: 4px;\n\t\t\t\t\trow-gap: 10px;\n\t\t\t\t\tmargin: 30px 20px;\n\t\t\t\t}\n\t\t\t\t.redSquare, .violetSquare {\n\t\t\t\t\tgrid-column-start: 1;\n\t\t\t\t\tgrid-column-end: 3;\n\t\t\t\t}\n\t\t\t}\n\t\t\t@media (min-width: 768px) {\n\t\t\t\t.gridContainer {\n\t\t\t\t\tmargin: 20px 40px;\n\t\t\t\t\tgrid-template-columns: 20% 60% 20%;\n\t\t\t\t\tgrid-template-rows: 30% 60%;\n\t\t\t\t\tcolumn-gap: 10px;\n\t\t\t\t\trow-gap: 20px;\n\t\t\t\t}\n\t\t\t\t.redSquare {\n\t\t\t\t\tgrid-column-end: 4;\n\t\t\t\t}\n\t\t\t\t.violetSquare {\n\t\t\t\t\tgrid-column-start: 3;\n\t\t\t\t\tgrid-column-end: 4;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"gridContainer\">\n\t\t\t<div class=\"redSquare\">&nbsp;</div>\n\t\t\t<div class=\"greenSquare\">&nbsp;</div>\n\t\t\t<div class=\"blueSquare\">&nbsp;</div>\n\t\t\t<div class=\"violetSquare\">&nbsp;</div>\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS"]
+    },
+    "Übung 2.3 (Holy Grail - Flexbox)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Holy Grail mit Flexbox</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\n\t\t<style type=\"text/css\">\n\t\t\thtml, body {\n\t\t\t\theight: 99%;\n\t\t\t}\n\t\t\tbody {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-weight: normal;\n\t\t\t\tmargin:  0;\n\t\t\t}\n\t\t\t.flexContainer {\n\t\t\t\tdisplay: flex;\n\t\t\t\tflex-direction: column;\n\t\t\t\tmargin: 10px;\n\t\t\t\tborder-radius: 10px;\n\t\t\t\tcolor:  white;\n\t\t\t\ttext-align: center;\n\t\t\t\theight: 98%;\n\t\t\t}\n\t\t\t.header {\n\t\t\t\tbackground: #c04f50;\n\t\t\t\tborder-radius: 10px 10px 0 0;\n\t\t\t\tpadding: 0 5px 15px;\n\t\t\t}\n\t\t\t.header .nav {\n\t\t\t\ttext-align: left;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t\t.header .nav a {\n\t\t\t\tbackground: #6A709F;\n\t\t\t\tcolor: black;\n\t\t\t\tborder-radius: 20px;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tpadding: 4px 30px;\n\t\t\t\tmargin: 0 5px;\n\t\t\t\tfont-weight: bold;\n\t\t\t\tfont-family: Arial;\n\t\t\t\tborder: 2px outset #F9FBFC;\n\t\t\t\tfont-size: 14px;\n\t\t\t}\n\t\t\t.main {\n\t\t\t\tdisplay: flex;\n\t\t\t\toverflow-y: auto;\n\t\t\t}\n\t\t\t.leftSide, .rightSide {\n\t\t\t\tpadding: 0 4rem;\n\t\t\t\tbackground: #C28280;\n\t\t\t}\n\t\t\t.mainContent {\n\t\t\t\tbackground: #6D9FBF;\n\t\t\t\toverflow-y: auto;\n\t\t\t}\n\t\t\t.footer {\n\t\t\t\tbackground: black;\n\t\t\t\tpadding-bottom: 15px;\n\t\t\t\tborder-radius: 0 0 10px 10px;\n\t\t\t}\n\t\t\t.footer a {\n\t\t\t\tcolor: white;\n\t\t\t\tfont-size: 14px;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"flexContainer\">\n\t\t\t<div class=\"header\">\n\t\t\t\t<h2>Header</h2>\n\t\t\t\t<div class=\"nav\">\n\t\t\t\t\t<a href=\"#\">Home</a>\n\t\t\t\t\t<a href=\"#\">News</a>\n\t\t\t\t\t<a href=\"#\">Contact</a>\n\t\t\t\t\t<a href=\"#\">About</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"main\">\n\t\t\t\t<div class=\"leftSide\">\n\t\t\t\t\t<h2>left <br> menu <br> with <br> many <br> items</h2>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mainContent\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   \n\n\tDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   \n\n\tUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   \n\n\tNam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   \n\n\tDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n\n\tAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.   \n\n\tConsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.   \n\n\tLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   \n\n\tDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   \n\n\tUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   \n\n\tNam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo\n\t\t\t\t</div>\n\t\t\t\t<div class=\"rightSide\">\n\t\t\t\t\t<h2>right</h2>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"footer\">\n\t\t\t\t<h2>Footer: \n\t\t\t\t\t<span>\t\n\t\t\t\t\t\t<a href=\"#\">Sitemap</a>\n\t\t\t\t\t\t<a href=\"#\">Home</a>\n\t\t\t\t\t\t<a href=\"#\">News</a>\n\t\t\t\t\t\t<a href=\"#\">Contact</a>\n\t\t\t\t\t\t<a href=\"#\">About</a>\n\t\t\t\t\t</span>\n\t\t\t\t</h2>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS"]
+    },
+    "Übung 2.3 (Holy Grail - Grid)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Holy Grail mit Grid</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\n\t\t<style type=\"text/css\">\n\t\t\thtml, body {\n\t\t\t\theight: 100%;\n\t\t\t}\n\t\t\tbody {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tfont-weight: normal;\n\t\t\t\tmargin:  0;\n\t\t\t}\n\t\t\t.gridContainer {\n\t\t\t\tdisplay: grid;\n\t\t\t\tgrid-template: auto 1fr auto / auto 1fr auto;\n\t\t\t\tmargin: 10px;\n\t\t\t\tborder-radius: 10px;\n\t\t\t\tcolor:  white;\n\t\t\t\ttext-align: center;\n\t\t\t\theight: 95%;\n\t\t\t}\n\t\t\t.header {\n\t\t\t\tbackground: #c04f50;\n\t\t\t\tborder-radius: 10px 10px 0 0;\n\t\t\t\tpadding: 0 5px 15px;\n\t\t\t}\n\t\t\t.header .nav {\n\t\t\t\ttext-align: left;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t\t.header .nav a {\n\t\t\t\tbackground: #6A709F;\n\t\t\t\tcolor: black;\n\t\t\t\tborder-radius: 20px;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tpadding: 4px 30px;\n\t\t\t\tmargin: 0 5px;\n\t\t\t\tfont-weight: bold;\n\t\t\t\tfont-family: Arial;\n\t\t\t\tborder: 2px outset #F9FBFC;\n\t\t\t\tfont-size: 14px;\n\t\t\t}\n\t\t\t.header, .footer {\n\t\t\t\tgrid-column: 1 / 4;\n\t\t\t}\n\t\t\t.leftSide, .rightSide {\n\t\t\t\tpadding: 0 4rem;\n\t\t\t\tbackground: #C28280;\n\t\t\t}\n\t\t\t.mainContent {\n\t\t\t\tbackground: #6D9FBF;\n\t\t\t\toverflow-y: auto;\n\t\t\t}\n\t\t\t.footer {\n\t\t\t\tbackground: black;\n\t\t\t\tpadding-bottom: 15px;\n\t\t\t\tborder-radius: 0 0 10px 10px;\n\t\t\t}\n\t\t\t.footer a {\n\t\t\t\tcolor: white;\n\t\t\t\tfont-size: 14px;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"gridContainer\">\n\t\t\t<div class=\"header\">\n\t\t\t\t<h2>Header</h2>\n\t\t\t\t<div class=\"nav\">\n\t\t\t\t\t<a href=\"#\">Home</a>\n\t\t\t\t\t<a href=\"#\">News</a>\n\t\t\t\t\t<a href=\"#\">Contact</a>\n\t\t\t\t\t<a href=\"#\">About</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"leftSide\">\n\t\t\t\t<h2>left <br> menu <br> with <br> many <br> items</h2>\n\t\t\t</div>\n\t\t\t<div class=\"mainContent\">\n\t\t\t\tLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   \n\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   \n\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   \n\nNam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   \n\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   \n\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.   \n\nConsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.   \n\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   \n\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   \n\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   \n\nNam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo\n\t\t\t</div>\n\t\t\t<div class=\"rightSide\">\n\t\t\t\t<h2>right</h2>\n\t\t\t</div>\n\t\t\t<div class=\"footer\">\n\t\t\t\t<h2>Footer: \n\t\t\t\t\t<span>\t\n\t\t\t\t\t\t<a href=\"#\">Sitemap</a>\n\t\t\t\t\t\t<a href=\"#\">Home</a>\n\t\t\t\t\t\t<a href=\"#\">News</a>\n\t\t\t\t\t\t<a href=\"#\">Contact</a>\n\t\t\t\t\t\t<a href=\"#\">About</a>\n\t\t\t\t\t</span>\n\t\t\t\t</h2>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS"]
+    },
+    "Übung 2.4 (Responsiv mit Grid)": {
+      "content": "",
+      "code": [
+        {
+          "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Product Landing Page</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\n\t\t<style type=\"text/css\">\n\t\t\thtml, body {\n\t\t\t\theight: 100%;\n\t\t\t}\n\t\t\tbody {\n\t\t\t\tmargin: 0;\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t}\n\t\t\t.gridContainer {\n\t\t\t\tdisplay: grid;\n\t\t\t\tgrid-template: auto auto 1fr auto / 1fr 1fr;\n\t\t\t\theight: 100%;\n\t\t\t}\n\t\t\t.button {\n\t\t\t\ttext-decoration: none;\n\t\t\t\tbackground: #F88E37;\n\t\t\t\tcolor: white;\n\t\t\t\ttext-transform: uppercase;\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 10px;\n\t\t\t\twidth:  50%;\n\t\t\t\tdisplay: block;\n\t\t\t\ttext-align: center;\n\t\t\t\tfont-weight: bold;\n\t\t\t\tmargin:  0 auto;\n\t\t\t}\n\t\t\t.header {\n\t\t\t\tbackground: #363636;\n\t\t\t\ttext-align: center;\n\t\t\t\tpadding: 20px 0;\n\t\t\t\tgrid-column: 1 / 3;\n\t\t\t}\n\t\t\t.header a {\n\t\t\t\tcolor: white;\n\t\t\t\ttext-decoration: none;\n\t\t\t\tmargin: 0 10px;\n\t\t\t}\n\t\t\t.heading {\n\t\t\t\tgrid-column: 1 / 3;\n\t\t\t\tmargin: 30px 0 0;\n\t\t\t}\n\t\t\t.heading h1 {\n\t\t\t\tmargin: 0 0 20px;\n\t\t\t\ttext-align: center;\n\t\t\t}\n\t\t\t.mainContent {\n\t\t\t\tbackground: #EBEAE6;\n\t\t\t\tpadding: 20px 0 10px;\n\t\t\t}\n\t\t\t.imgContainer {\n\t\t\t\tpadding-left: 80px;\n                                padding-bottom: 25px;\n\t\t\t}\n\t\t\t.imgContainer img {\n\t\t\t\tborder-radius: 10px;\n\t\t\t\tborder: 1px solid #000;\n\t\t\t\tmax-width: 100%;\n\t\t\t}\n\t\t\t.info {\n\t\t\t\ttext-align: center;\n\t\t\t\tpadding-top: 20px;\n\t\t\t}\n\t\t\t.info p {\n\t\t\t\tmargin:  50px 0;\n\t\t\t}\n\t\t\t.footer {\n\t\t\t\ttext-align: center;\n\t\t\t\tbackground: #011826;\n\t\t\t\tcolor: white;\n\t\t\t\tpadding:  30px 0;\n\t\t\t\tgrid-column: 1 / 3;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"gridContainer\">\n\t\t\t<div class=\"header\">\n\t\t\t\t<div class=\"nav\">\n\t\t\t\t\t<a href=\"#\">The book series</a>\n\t\t\t\t\t<a href=\"#\">Textimonials</a>\n\t\t\t\t\t<a href=\"#\">The Author</a>\n\t\t\t\t\t<a href=\"#\">Free resources</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"heading\">\n\t\t\t\t<h1>You dont know JavaScript</h1>\n\t\t\t</div>\n\t\t\t<div class=\"imgContainer\">\n\t\t\t\t<img alt=\"product-cover\" src=\"/wem/assets/img/landing-img.png\" />\n\t\t\t</div>\n\t\t\t<div class=\"info\">\n\t\t\t\t<p>Don't just drift through Javascript.</p>\n\t\t\t\t<p>Understand how Javascript works</p>\n\t\t\t\t<p>Start your journey through the bumpy side of Javascript</p>\n\t\t\t\t<a href=\"#\" class=\"button\">Order your copy now</a>\n\t\t\t</div>\n\t\t\t<div class=\"footer\">\n\t\t\t\t<p>The first ebook in the book series is absolutely free.</p>\n\t\t\t\t<a href=\"#\" class=\"button\">Find out more about this offer</a>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>",
+          "type": "HTML"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS"]
+    }
+  },
+  "Übung 3": {
+    "Übung 3.1 (Funktionen in JavaScript)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript"]
+    },
+    "Übung 3.2 (Advanced Functional JavaScript Programming)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": ["https://developer.mozilla.org/de/docs/Learn/JavaScript"]
+    }
+  },
+  "Übung 4": {
+    "Übung 4.1 (Einkaufsliste)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 4.2 (Rednerliste)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 4.3 (Tabellenkalkulation)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 4.4 (HTML-Editor)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    }
+  },
+  "Übung 5": {
+    "Übung 5.1 (Promises)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 5.2 (async / await)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 5.3 (Web Worker)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 5.4 (WWW-Navigator)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    }
+  },
+  "Übung 6": {
+    "Übung 6.1 (Statistik-Balkendiagramm in SVG)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 6.2 (SVG Bezier-Animation)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 6.3 (Kalligraphie-Editor in SVG)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    }
+  },
+  "Übung 7": {
+    "Übung 7.1 (File Generatoren)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 7.2 (Performance Merge)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 7.3 (Express.js Server)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    }
+  },
+  "Übung 8": {
+    "Übung 8.1 (Web-Komponenten erstellen)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 8.2 (LitElement Menü-Komponente)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    },
+    "Übung 8.3 (LitElement WWW-Navigator)": {
+      "content": "",
+      "code": [
+        {
+          "content": "",
+          "type": "Javascript"
+        }
+      ],
+      "references": [""]
+    }
+  }
+}
+
+

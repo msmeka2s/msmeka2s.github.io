@@ -8,6 +8,9 @@ body {
 	font-family: Arial;
 	background: #aaa;
 }
+.hidden {
+	display: none;
+}
 h2 {
 	font-weight: normal;
 	margin:  0;
@@ -17,7 +20,7 @@ h2 {
 	color: black;
 	border-radius: 14px;
 	text-decoration: none;
-	padding: 8px 24px;
+	padding: 8px 12px;
 	margin: 0 10px;
 	font-weight: bold;
 	font-size: 14px;
@@ -25,6 +28,26 @@ h2 {
 	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.button.active,
+.button:hover {
+	background: #0565bf;
+}
+
+.code {
+	text-align: left;
+	margin-top: 50px;
+	tab-size: 4;
+}
+
+.code pre {
+	background: #333;
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+
+.backButton {
+	text-align: left;
+}
 
 /* specific styles  */
 
@@ -49,12 +72,19 @@ h2 {
 	grid-column: 1 / 4;
 }
 .leftSide, .rightSide {
-	padding: 10px 4rem;
+	padding: 10px 30px;
 	background: #ad6a3d;
 }
 .leftSide .sideNav a {
 	display: block;
 	margin: 16px 0;
+	max-width: 150px;
+}
+.rightSide {
+	max-width: 200px;
+}
+.rightSide a {
+	word-break: break-word;
 }
 .mainContent {
 	background: #3e4e59;
