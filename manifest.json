@@ -1,0 +1,29 @@
+{
+  "short_name": "WWW-Navigator",
+  "name": "WWW-Navigator",
+  "lang": "de-DE",
+  "icons": [
+    {
+      "src": "/img/icon-192x192.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512x512.jpg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/webengineering/uebung9/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/webengineering/uebung9/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+
+  ],
+  "description": "WWW-Navigator",
+  "screenshots": [
+
+  ]
+}
