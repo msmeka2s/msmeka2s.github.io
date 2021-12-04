@@ -6,7 +6,8 @@
     {
       "src": "/img/icon-192x192.jpg",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "/img/icon-512x512.jpg",
@@ -14,10 +15,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/webengineering/uebung9/index.html",
+  "start_url": "/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/webengineering/uebung9/",
+  "scope": "/",
   "theme_color": "#3367D6",
   "shortcuts": [
 
