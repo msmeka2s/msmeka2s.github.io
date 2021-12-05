@@ -55,9 +55,6 @@ export class Menu extends LitElement {
   }
 
   render() {
-
-    console.log(this.resetMenu);
-
     if (!this.elements.length || this.resetMenu) {
       this.elements = this.initialSubmenu;
       this.resetMenu = false;
