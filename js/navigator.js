@@ -52,6 +52,7 @@ class WwwNavigator extends LitElement {
             
           .backButton {
             text-align: left;
+            margin-bottom: 25px;
           }
           .backButton a {
             color: white;
@@ -109,6 +110,19 @@ class WwwNavigator extends LitElement {
           .footer a {
             color: white;
             margin: 0 15px;
+          }
+          @media screen and (max-width: 375px) {
+            .gridContainer .leftSide,
+            .gridContainer .mainContent,
+            .gridContainer .rightSide {
+              grid-column: 1 / 4;
+            }
+            .gridContainer .mainContent {
+              overflow: visible;
+            }
+            .gridContainer .rightSide {
+              max-width: 100%;
+            }
           }
         `;
     }

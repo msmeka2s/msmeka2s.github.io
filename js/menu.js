@@ -30,6 +30,14 @@ export class Menu extends LitElement {
         background: #fff;
         box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
       }
+      @media screen and (max-width: 375px) {
+        .menu.vertical {
+          margin: 0;
+        }
+        .menu.vertical button {
+           display: inline;
+        }
+      }
     `;
   }
 
