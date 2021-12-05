@@ -1,0 +1,23 @@
+{
+  "name": "msmeka2s-webpage",
+  "version": "1.0.0",
+  "description": "webpage webengineering - max smekal",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msmeka2s/msmeka2s.github.io.git"
+  },
+  "author": "msmeka2s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msmeka2s/msmeka2s.github.io/issues"
+  },
+  "homepage": "https://github.com/msmeka2s/msmeka2s.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
