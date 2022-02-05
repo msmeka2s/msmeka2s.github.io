@@ -37,7 +37,10 @@ class WwwNavigator extends LitElement {
           .button:hover {
             background: #0565bf;
           }
-            
+          iframe {
+            width: 100%;
+            height: 80vh;
+          }
           .code {
             text-align: left;
             margin-top: 50px;
@@ -176,14 +179,21 @@ class WwwNavigator extends LitElement {
                   <h2>Web Engineering Masterkurs - Wintersemester 21/22</h2>
                   <p>Präsentation des Semesterprojektes</p>
                   <p class="small">Von Maximilian Smekal</p>
+                  <div class="exerciseDisplay ${this.sourceCodes ? '' : 'hidden'}">
+                      ${this.sourceCodes ? this.sourceCodes.map(code => html`
+                          <iframe srcdoc='${code.content}'></iframe>
+                      `) : 'No source code available'}
+                  </div>
                   <div class="code ${this.sourceCodes ? '' : 'hidden'}">
                       ${this.sourceCodes ? this.sourceCodes.map(code => html`
-                          <h3>${code.type}-Quellcode</h3>
-                          <pre>
+                          ${code.showCode ? html`
+                              <h3>${code.type}-Quellcode</h3>
+                              <pre>
                               <code>
                                   ${code.content}
                               </code>
                           </pre>
+                          ` : ''}
                       `) : 'No source code available'}
                   </div>
               </div>
