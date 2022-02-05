@@ -181,18 +181,16 @@ class WwwNavigator extends LitElement {
                   <p class="small">Von Maximilian Smekal</p>
                   <div class="exerciseDisplay ${this.sourceCodes ? '' : 'hidden'}">
                       ${this.sourceCodes ? this.sourceCodes.map(code => html`
-                          <iframe srcdoc='${code.content}'></iframe>
+                          ${code.visualizeOutput ? html`
+                            <iframe srcdoc='${code.content}'></iframe>
+                          ` : ''}
                       `) : 'No source code available'}
                   </div>
                   <div class="code ${this.sourceCodes ? '' : 'hidden'}">
                       ${this.sourceCodes ? this.sourceCodes.map(code => html`
                           ${code.showCode ? html`
-                              <h3>${code.type}-Quellcode</h3>
-                              <pre>
-                              <code>
-                                  ${code.content}
-                              </code>
-                          </pre>
+                              <h3>${code.headline ? code.headline : code.type + '-Quellcode'}</h3>
+                              <pre><code>${code.content}</code></pre>
                           ` : ''}
                       `) : 'No source code available'}
                   </div>
