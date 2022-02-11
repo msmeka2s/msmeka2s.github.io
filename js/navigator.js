@@ -39,7 +39,8 @@ class WwwNavigator extends LitElement {
           }
           iframe {
             width: 100%;
-            height: 80vh;
+            height: 60vh;
+            margin-top: 50px;
           }
           .code {
             text-align: left;
