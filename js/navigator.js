@@ -5,20 +5,17 @@ class WwwNavigator extends LitElement {
     static get styles() {
         return css`
           .gridContainer {
-            display: grid;
-            grid-template: auto 1fr auto / auto 1fr auto;
+            display: flex;
+            flex-direction: column;
             margin: 10px;
             border-radius: 10px;
             color:  white;
-            text-align: center;
-            height: 95%;
           }
           .hidden {
             display: none;
           }
-          h2 {
+          h1, h2 {
             font-weight: normal;
-            margin:  0;
           }
           .button {
             background: #45a5ff;
@@ -40,7 +37,7 @@ class WwwNavigator extends LitElement {
           iframe {
             width: 100%;
             height: 60vh;
-            margin-top: 50px;
+            margin-top: 25px;
           }
           .code {
             text-align: left;
@@ -52,6 +49,7 @@ class WwwNavigator extends LitElement {
             background: #333;
             padding: 15px 20px;
             border-radius: 5px;
+            white-space: pre-wrap;
           }
             
           .backButton {
@@ -81,7 +79,7 @@ class WwwNavigator extends LitElement {
             grid-column: 1 / 4;
           }
           .leftSide, .rightSide {
-            padding: 10px 30px;
+            padding: 10px;
             background: #ad6a3d;
           }
           .leftSide .sideNav a {
@@ -89,8 +87,8 @@ class WwwNavigator extends LitElement {
             margin: 16px 0;
             max-width: 150px;
           }
-          .rightSide {
-            max-width: 200px;
+          .rightSide p {
+            margin: 0 0 5px;
           }
           .rightSide a {
             word-break: break-word;
@@ -98,7 +96,7 @@ class WwwNavigator extends LitElement {
           .mainContent {
             background: #3e4e59;
             overflow-y: auto;
-            padding: 30px;
+            padding: 25px 15px;
           }
           .mainContent p {
             font-size: 1.125em;
@@ -115,17 +113,41 @@ class WwwNavigator extends LitElement {
             color: white;
             margin: 0 15px;
           }
-          @media screen and (max-width: 375px) {
-            .gridContainer .leftSide,
-            .gridContainer .mainContent,
-            .gridContainer .rightSide {
-              grid-column: 1 / 4;
+          @media (min-width: 600px) {
+            .gridContainer {
+              display: grid;
+              grid-template: auto 1fr auto / auto 1fr auto;
+              text-align: center;
+              
+            }
+            .leftSide {
+              grid-row-start: 2;
+              grid-row-end: 4;
+              padding: 10px 20px;
+            }
+            .mainContent {
+              grid-column-start: 2;
+              grid-column-end: 3;
+            }
+            .rightSide {
+              grid-column-start: 2;
+              grid-column-end: 3;
+            }
+          }
+          @media (min-width: 1200px) {
+            html, body {
+              height: 100%;
+            }
+            .gridContainer .leftSide {
+              grid-row-end: 3;
             }
             .gridContainer .mainContent {
-              overflow: visible;
+              grid-column-end: 2;
             }
             .gridContainer .rightSide {
-              max-width: 100%;
+              grid-column-start: 3;
+              grid-column-end: 3;
+              max-width: 200px;
             }
           }
         `;
@@ -133,6 +155,7 @@ class WwwNavigator extends LitElement {
 
     static get properties() {
         return {
+            heading: { type: String },
             mainContent: { type: String },
             references: { type: Array },
             sourceCodes: { type: Array },
@@ -144,6 +167,7 @@ class WwwNavigator extends LitElement {
 
     constructor() {
         super();
+        this.heading = '';
         this.mainContent = '';
         this.references = [];
         this.sourceCodes = [];
@@ -177,9 +201,15 @@ class WwwNavigator extends LitElement {
                   <div class="backButton ${this.showBacklink ? '' : 'hidden'}">
                       <a href="#" @click="${() => this.triggerResetSubmenu()}">zurück</a>
                   </div>
-                  <h2>Web Engineering Masterkurs - Wintersemester 21/22</h2>
-                  <p>Präsentation des Semesterprojektes</p>
-                  <p class="small">Von Maximilian Smekal</p>
+                  <div class="intro">
+                      ${this.heading ? html`
+                          <h1>${this.heading}</h1>
+                      ` : html `
+                          <h1>Web Engineering Masterkurs - Wintersemester 21/22</h1>
+                          <h2>Präsentation des Semesterprojektes</h2>
+                          <p>Von Maximilian Smekal</p>
+                      ` }
+                  </div>
                   <div class="exerciseDisplay ${this.sourceCodes ? '' : 'hidden'}">
                       ${this.sourceCodes ? this.sourceCodes.map(code => html`
                           ${code.visualizeOutput ? html`
@@ -198,7 +228,7 @@ class WwwNavigator extends LitElement {
               </div>
               <div class="rightSide">
                 ${this.references ? this.references.map(reference => html`
-                  <a href="${reference}">${reference}</a>
+                  <p><a href="${reference}">${reference}</a></p>
                 `) : 'Additional Information: Links to external ressources'}
               </div>
               <div class="footer">
@@ -220,6 +250,7 @@ class WwwNavigator extends LitElement {
 
     updateContent(e) {
         const activeMenuItem = e.detail.activeMenuItem;
+        this.heading = activeMenuItem.heading ?? '';
         this.mainContent = activeMenuItem.content ?? '';
         this.sourceCodes = activeMenuItem.code ?? [];
         this.references = activeMenuItem.references ?? [];
@@ -230,6 +261,7 @@ class WwwNavigator extends LitElement {
 
     triggerResetSubmenu() {
         this.resetSubmenu = true;
+        this.heading = '';
         this.mainContent = '';
         this.sourceCodes = [];
         this.references = [];

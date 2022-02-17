@@ -4,38 +4,41 @@ export class Menu extends LitElement {
 
   static get styles() {
     return css`
-      .menu.vertical {
-        margin-top: 20px;
-      }
       .vertical button {
         display: block;
-        margin-top: 10px;
+        margin-top: 5px;
+      }
+      .menu.vertical button {
+        display: inline;
       }
       button {
         background: #6A709F;
         color: black;
         border-radius: 20px;
         text-decoration: none;
-        padding: 6px 30px;
-        margin: 0 5px;
+        padding: 10px 15px;
+        margin: 0 1px;
         font-weight: bold;
         font-family: Arial;
         border: 2px outset #F9FBFC;
         font-size: 14px;
         cursor: pointer;
-        max-width: 180px;
+        width: 100px;
       }
       button:hover,
       button.active {
         background: #fff;
         box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
       }
-      @media screen and (max-width: 375px) {
-        .menu.vertical {
-          margin: 0;
-        }
+      @media (min-width: 600px) {
         .menu.vertical button {
-           display: inline;
+          display: block;
+          margin-top: 10px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .menu.vertical button {
+          width: 120px;
         }
       }
     `;

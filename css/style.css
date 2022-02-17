@@ -1,8 +1,5 @@
 /* General Styles */
 
-html, body {
-	height: 100%;
-}
 body {
 	margin: 0;
 	font-family: Arial;
@@ -52,13 +49,11 @@ h2 {
 /* specific styles  */
 
 .gridContainer {
-	display: grid;
-	grid-template: auto 1fr auto / auto 1fr auto;
+	display: flex;
+	flex-direction: column;
 	margin: 10px;
 	border-radius: 10px;
 	color:  white;
-	text-align: center;
-	height: 95%;
 }
 .header {
 	background: #1d8217;
@@ -105,4 +100,22 @@ h2 {
 .footer a {
 	color: white;
 	margin: 0 15px;
+}
+
+@media (min-width: 375px) {
+	.gridContainer {
+		display: grid;
+		grid-template: auto 1fr auto / auto 1fr auto;
+		text-align: center;
+		height: 95%;
+	}
+}
+
+@media (min-width: 768px) {
+	html, body {
+		height: 100%;
+	}
+	.gridContainer {
+
+	}
 }

@@ -3,11 +3,12 @@
     "name": "Übung 1",
     "items": [
       {
-        "name": "Übung 1.1 (Fachliche Argumentation über Erfolgsprinzipien des WWW)",
+        "heading": "Fachliche Argumentation über Erfolgsprinzipien des WWW",
+        "name": "Übung 1.1",
         "content": "",
         "code": [
           {
-            "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Fachliche Argumentation über Erfolgsprinzipien des WWW</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t\tbackground: #fff;\n\t\t\t\tcolor: #333;\n\t\t\t}\n\t\t\t.item {\n\t\t\t\tmargin-bottom: 30px;\n\t\t\t\twidth: 66%;\n\t\t\t\t-webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tbox-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 15px;\n\t\t\t\tbackground: #ddd;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\tp {\n\t\t\t\tmargin: 15px 0 0;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<h1>Fachliche Argumentation über Erfolgsprinzipien des WWW</h1>\n\t\t<div class=\"item\">\n\t\t\t<h2>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von TBL abgelehnt?</h2>\n\t\t\t<p>der Vorgesetzte von TBL hat die Vagheit in dem Konzept nicht verstanden und mit der\n\t\t\t\tEvaluierbarkeit verwechselt. Außerdem hatte die Hypertext-Community den Eindruck, dass sie in der\n\t\t\t\tWissenschaft schon weiter voran geschritten war, und dass das Konzept von TBL ein Rückschritt\n\t\t\t\tgewesen wäre. Das lag unter anderem daran, dass es in dem Konzept möglich war \"broken links\" zu\n\t\t\t\thaben, also Links, die ins leere zeigen.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Was sind die fachlichen Argumente, warum das WWW dennoch ein Erfolg wurde?</h2>\n\t\t\t<p>Das WWW wurde dennoch ein Erfolg, da es möglich war die unterschiedlichen Technologien unabhängig\n\t\t\t\tvoneinander in mehreren Dimensionen weiter zu entwickeln und das ohne zentrale Kontrolle.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Was wäre der Preis für die garantierte Verhinderung von “broken links”?</h2>\n\t\t\t<p>Wenn man versuchen würde, \"broken links\" zu verhindern, könnte die Dezentralität des WWW nicht mehr gewährleistet werden.</p>\n\t\t</div>\n\t</body>\n</html>",
+            "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Fachliche Argumentation über Erfolgsprinzipien des WWW</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t\tbackground: #fff;\n\t\t\t\tcolor: #333;\n\t\t\t}\n\t\t\t.item {\n\t\t\t\tmargin-bottom: 30px;\n\t\t\t\t-webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tbox-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 15px;\n\t\t\t\tbackground: #ddd;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\tp {\n\t\t\t\tmargin: 15px 0 0;\n\t\t\t}\n\t\t\t@media (min-width: 768px) {\n\t\t\t\t.item {\n\t\t\t\t\twidth: 66%;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<h1>Fachliche Argumentation über Erfolgsprinzipien des WWW</h1>\n\t\t<div class=\"item\">\n\t\t\t<h2>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von TBL abgelehnt?</h2>\n\t\t\t<p>der Vorgesetzte von TBL hat die Vagheit in dem Konzept nicht verstanden und mit der\n\t\t\t\tEvaluierbarkeit verwechselt. Außerdem hatte die Hypertext-Community den Eindruck, dass sie in der\n\t\t\t\tWissenschaft schon weiter voran geschritten war, und dass das Konzept von TBL ein Rückschritt\n\t\t\t\tgewesen wäre. Das lag unter anderem daran, dass es in dem Konzept möglich war \"broken links\" zu\n\t\t\t\thaben, also Links, die ins leere zeigen.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Was sind die fachlichen Argumente, warum das WWW dennoch ein Erfolg wurde?</h2>\n\t\t\t<p>Das WWW wurde dennoch ein Erfolg, da es möglich war die unterschiedlichen Technologien unabhängig\n\t\t\t\tvoneinander in mehreren Dimensionen weiter zu entwickeln und das ohne zentrale Kontrolle.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Was wäre der Preis für die garantierte Verhinderung von “broken links”?</h2>\n\t\t\t<p>Wenn man versuchen würde, \"broken links\" zu verhindern, könnte die Dezentralität des WWW nicht mehr gewährleistet werden.</p>\n\t\t</div>\n\t</body>\n</html>",
             "type": "HTML",
             "showCode": false,
             "visualizeOutput": true
@@ -18,11 +19,12 @@
         ]
       },
       {
-        "name": "Übung 1.2 (HTTP)",
+        "heading": "HTTP",
+        "name": "Übung 1.2",
         "content": "",
         "code": [
           {
-            "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>HTTP</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t\tbackground: #fff;\n\t\t\t\tcolor: #333;\n\t\t\t}\n\t\t\t.item {\n\t\t\t\tmargin-bottom: 30px;\n\t\t\t\twidth: 66%;\n\t\t\t\t-webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tbox-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 15px;\n\t\t\t\tbackground: #ddd;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\tp {\n\t\t\t\tmargin: 15px 0 0;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<h1>HTTP</h1>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</h2>\n\t\t\t<p>Der Status Code 200 bedeutet, dass die Anfrage erfolgreich bearbeitet wurde und das Ergebnis der\n\t\t\t\tAnfrage in der Antwort übertragen wird.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 301. Was hat das zu bedeuten?</h2>\n\t\t\t<p>Der Status Code 301 bedeutet, dass die angeforderte Ressource ab sofort unter der im\n\t\t\t\t„Location“-Header-Feld angegebenen Adresse bereitsteht (auch Redirect genannt). Die alte Adresse\n\t\t\t\tist nicht länger gültig.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 400. Was hat das zu bedeuten? Was können Sie dagegen tun?</h2>\n\t\t\t<p>Der Status Code 400 bedeutet, dass die Anfrage-Nachricht fehlerhaft aufgebaut war. Um das zu\n\t\t\t\tverhindern, müssen die Daten, die an den Server übermittelt werden das richtige Format und die\n\t\t\t\trichtige Syntax haben, um vom Server richtig interpretiert werden zu können.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 403. Was hat das zu bedeuten? Was können Sie dagegen tun?</h2>\n\t\t\t<p>Der Status Code 403 bedeutet, dass die Anfrage  mangels Berechtigung des Clients nicht durchgeführt wurde,\n\t\t\t\tbspw. weil der authentifizierte Benutzer nicht berechtigt ist oder eine als HTTPS konfigurierte URL nur\n\t\t\t\tmit HTTP aufgerufen wurde.</p>\n\t\t\t<p>Um diesen Status Code zu vermeiden ist es wichtig sicher zu stellen, dass der Benutzer, der diese URL\n\t\t\t\taufruft, auch über die notwendige Zugriffsberechtigung verfügt.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>In einer Webanwendung benötigen Sie eine OPTIONS-Anfrage, die die Optionen des Servers vor dem\n\t\t\t\teigentlichen Zugriff erfragen soll. Aus Performanzgründen soll die Abfrage jedoch cacheable sein.\n\t\t\t\tWie könnten Sie dafür eine Lösung angehen?</h2>\n\t\t\t<p>Es ist zwar von den Erfindern so gewünscht, dass die OPTIONS-Anfrage nicht cacheable ist.\n\t\t\t\tDieser Mechanismus muss allerdings von den Programmierern selbst umgesetzt werden. So kann der\n\t\t\t\tProgrammierer sich auch dazu entscheiden, die Antwort der OPTIONS-Anfrage einfach im Cache zu speichern.</p>\n\t\t</div>\n\t</body>\n</html>",
+            "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>HTTP</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t\tbackground: #fff;\n\t\t\t\tcolor: #333;\n\t\t\t}\n\t\t\t.item {\n\t\t\t\tmargin-bottom: 30px;\n\t\t\t\t-webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tbox-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 15px;\n\t\t\t\tbackground: #ddd;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\tp {\n\t\t\t\tmargin: 15px 0 0;\n\t\t\t}\n\t\t\t@media (min-width: 768px) {\n\t\t\t\t.item {\n\t\t\t\t\twidth: 66%;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<h1>HTTP</h1>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</h2>\n\t\t\t<p>Der Status Code 200 bedeutet, dass die Anfrage erfolgreich bearbeitet wurde und das Ergebnis der\n\t\t\t\tAnfrage in der Antwort übertragen wird.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 301. Was hat das zu bedeuten?</h2>\n\t\t\t<p>Der Status Code 301 bedeutet, dass die angeforderte Ressource ab sofort unter der im\n\t\t\t\t„Location“-Header-Feld angegebenen Adresse bereitsteht (auch Redirect genannt). Die alte Adresse\n\t\t\t\tist nicht länger gültig.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 400. Was hat das zu bedeuten? Was können Sie dagegen tun?</h2>\n\t\t\t<p>Der Status Code 400 bedeutet, dass die Anfrage-Nachricht fehlerhaft aufgebaut war. Um das zu\n\t\t\t\tverhindern, müssen die Daten, die an den Server übermittelt werden das richtige Format und die\n\t\t\t\trichtige Syntax haben, um vom Server richtig interpretiert werden zu können.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Sie bekommen im Browser den HTTP Status Code 403. Was hat das zu bedeuten? Was können Sie dagegen tun?</h2>\n\t\t\t<p>Der Status Code 403 bedeutet, dass die Anfrage  mangels Berechtigung des Clients nicht durchgeführt wurde,\n\t\t\t\tbspw. weil der authentifizierte Benutzer nicht berechtigt ist oder eine als HTTPS konfigurierte URL nur\n\t\t\t\tmit HTTP aufgerufen wurde.</p>\n\t\t\t<p>Um diesen Status Code zu vermeiden ist es wichtig sicher zu stellen, dass der Benutzer, der diese URL\n\t\t\t\taufruft, auch über die notwendige Zugriffsberechtigung verfügt.</p>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>In einer Webanwendung benötigen Sie eine OPTIONS-Anfrage, die die Optionen des Servers vor dem\n\t\t\t\teigentlichen Zugriff erfragen soll. Aus Performanzgründen soll die Abfrage jedoch cacheable sein.\n\t\t\t\tWie könnten Sie dafür eine Lösung angehen?</h2>\n\t\t\t<p>Es ist zwar von den Erfindern so gewünscht, dass die OPTIONS-Anfrage nicht cacheable ist.\n\t\t\t\tDieser Mechanismus muss allerdings von den Programmierern selbst umgesetzt werden. So kann der\n\t\t\t\tProgrammierer sich auch dazu entscheiden, die Antwort der OPTIONS-Anfrage einfach im Cache zu speichern.</p>\n\t\t</div>\n\t</body>\n</html>",
             "type": "HTML",
             "showCode": false,
             "visualizeOutput": true
@@ -33,7 +35,8 @@
         ]
       },
       {
-        "name": "Übung 1.3 (Tribute Page)",
+        "heading": "Tribute Page",
+        "name": "Übung 1.3",
         "content": "",
         "code": [
           {
@@ -48,7 +51,8 @@
         ]
       },
       {
-        "name": "Übung 1.4 (Survey Form)",
+        "heading": "Survey Form",
+        "name": "Übung 1.4",
         "content": "",
         "code": [
           {
@@ -63,7 +67,8 @@
         ]
       },
       {
-        "name": "Übung 1.5 (Product Landing Page)",
+        "heading": "Product Landing Page",
+        "name": "Übung 1.5",
         "content": "",
         "code": [
           {
@@ -83,7 +88,8 @@
     "name": "Übung 2",
     "items": [
       {
-        "name": "Übung 2.1 (Flexbox)",
+        "heading": "Flexbox",
+        "name": "Übung 2.1",
         "content": "",
         "code": [
           {
@@ -98,7 +104,8 @@
         ]
       },
       {
-        "name": "Übung 2.2 (Grid)",
+        "heading": "Grid",
+        "name": "Übung 2.2",
         "content": "",
         "code": [
           {
@@ -113,7 +120,8 @@
         ]
       },
       {
-        "name": "Übung 2.3 (Holy Grail - Flexbox)",
+        "heading": "Holy Grail - Flexbox",
+        "name": "Übung 2.3",
         "content": "",
         "code": [
           {
@@ -128,7 +136,8 @@
         ]
       },
       {
-        "name": "Übung 2.3 (Holy Grail - Grid)",
+        "heading": "Holy Grail - Grid",
+        "name": "Übung 2.3",
         "content": "",
         "code": [
           {
@@ -143,7 +152,8 @@
         ]
       },
       {
-        "name": "Übung 2.4 (Responsiv mit Grid)",
+        "heading": "Responsiv mit Grid",
+        "name": "Übung 2.4",
         "content": "",
         "code": [
           {
@@ -163,7 +173,8 @@
     "name": "Übung 3",
     "items": [
       {
-        "name": "Übung 3.1 (Funktionen in JavaScript)",
+        "heading": "Funktionen in JavaScript",
+        "name": "Übung 3.1",
         "content": "",
         "code": [
           {
@@ -178,7 +189,8 @@
         ]
       },
       {
-        "name": "Übung 3.2 (Advanced Functional JavaScript Programming)",
+        "heading": "Advanced Functional JavaScript Programming",
+        "name": "Übung 3.2",
         "content": "",
         "code": [
           {
@@ -198,7 +210,8 @@
     "name": "Übung 4",
     "items": [
       {
-        "name": "Übung 4.1 (Einkaufsliste)",
+        "heading": "Einkaufsliste",
+        "name": "Übung 4.1",
         "content": "",
         "code": [
           {
@@ -213,7 +226,8 @@
         ]
       },
       {
-        "name": "Übung 4.2 (Rednerliste)",
+        "heading": "Rednerliste",
+        "name": "Übung 4.2",
         "content": "",
         "code": [
           {
@@ -228,7 +242,8 @@
         ]
       },
       {
-        "name": "Übung 4.3 (Tabellenkalkulation)",
+        "heading": "Tabellenkalkulation",
+        "name": "Übung 4.3",
         "content": "",
         "code": [
           {
@@ -243,7 +258,8 @@
         ]
       },
       {
-        "name": "Übung 4.4 (HTML-Editor)",
+        "heading": "HTML-Editor",
+        "name": "Übung 4.4",
         "content": "",
         "code": [
           {
@@ -260,10 +276,12 @@
     ]
   },
   {
+
     "name": "Übung 5",
     "items": [
       {
-        "name": "Übung 5.1 (Promises)",
+        "heading": "Promises",
+        "name": "Übung 5.1",
         "content": "",
         "code": [
           {
@@ -278,7 +296,8 @@
         ]
       },
       {
-        "name": "Übung 5.2 (async / await)",
+        "heading": "async / await",
+        "name": "Übung 5.2",
         "content": "",
         "code": [
           {
@@ -293,7 +312,8 @@
         ]
       },
       {
-        "name": "Übung 5.3 (Web Worker)",
+        "heading": "Web Worker",
+        "name": "Übung 5.3",
         "content": "",
         "code": [
           {
@@ -330,7 +350,8 @@
         ]
       },
       {
-        "name": "Übung 5.4 (WWW-Navigator)",
+        "heading": "WWW-Navigator",
+        "name": "Übung 5.4",
         "content": "",
         "code": [
           {
@@ -350,7 +371,8 @@
     "name": "Übung 6",
     "items": [
       {
-        "name": "Übung 6.1 (Statistik-Balkendiagramm in SVG)",
+        "heading": "Statistik-Balkendiagramm in SVG",
+        "name": "Übung 6.1",
         "content": "",
         "code": [
           {
@@ -363,7 +385,8 @@
         ]
       },
       {
-        "name": "Übung 6.2 (SVG Bezier-Animation)",
+        "heading": "SVG Bezier-Animation",
+        "name": "Übung 6.2",
         "content": "",
         "code": [
           {
@@ -376,7 +399,8 @@
         ]
       },
       {
-        "name": "Übung 6.3 (Kalligraphie-Editor in SVG)",
+        "heading": "Kalligraphie-Editor in SVG",
+        "name": "Übung 6.3",
         "content": "",
         "code": [
           {
@@ -394,7 +418,8 @@
     "name": "Übung 7",
     "items": [
       {
-        "name": "Übung 7.1 (File Generatoren)",
+        "heading": "File Generatoren",
+        "name": "Übung 7.1",
         "content": "",
         "code": [
           {
@@ -415,7 +440,8 @@
         "references": [""]
       },
       {
-        "name": "Übung 7.2 (Performance Merge)",
+        "heading": "Performance Merge",
+        "name": "Übung 7.2",
         "content": "",
         "code": [
           {
@@ -436,7 +462,8 @@
         "references": [""]
       },
       {
-        "name": "Übung 7.3 (Express.js Server)",
+        "heading": "Express.js Server",
+        "name": "Übung 7.3",
         "content": "",
         "code": [
           {
@@ -455,7 +482,8 @@
     "name": "Übung 8",
     "items": [
       {
-        "name": "Übung 8.1 (Web-Komponenten erstellen)",
+        "heading": "Web-Komponenten erstellen",
+        "name": "Übung 8.1",
         "content": "",
         "code": [
           {
@@ -483,7 +511,8 @@
         "references": [""]
       },
       {
-        "name": "Übung 8.2 (LitElement Menü-Komponente)",
+        "heading": "LitElement Menü-Komponente",
+        "name": "Übung 8.2",
         "content": "",
         "code": [
           {
@@ -496,7 +525,8 @@
         "references": [""]
       },
       {
-        "name": "Übung 8.3 (LitElement WWW-Navigator)",
+        "heading": "LitElement WWW-Navigator",
+        "name": "Übung 8.3",
         "content": "",
         "code": [
           {
@@ -514,7 +544,8 @@
     "name": "Übung 9",
     "items": [
       {
-        "name": "Übung 9.1 (PWA)",
+        "heading": "PWA",
+        "name": "Übung 9.1",
         "content": "",
         "code": [
           {
@@ -532,7 +563,8 @@
     "name": "Übung 10",
     "items": [
       {
-        "name": "Übung 10.1 (Komponente in Vue.js)",
+        "heading": "Komponente in Vue.js",
+        "name": "Übung 10.1",
         "content": "",
         "code": [
           {
@@ -559,7 +591,8 @@
         "references": [""]
       },
       {
-        "name": "Übung 10.2 (Menü-Komponente)",
+        "heading": "Menü-Komponente",
+        "name": "Übung 10.2",
         "content": "",
         "code": [
           {
@@ -586,7 +619,8 @@
         "references": [""]
       },
       {
-        "name": "Übung 10.3 (Vue.js WWW-Navigator)",
+        "heading": "Vue.js WWW-Navigator",
+        "name": "Übung 10.3",
         "content": "",
         "code": [
           {
@@ -614,6 +648,100 @@
             "content": "<template>\n  <div class=\"menu\" :class=\"direction\">\n    <ul>\n      <li v-for=\"item in menuItems\" :key=\"item.id\">\n        <button :class=\"item.active ? 'active' : ''\" @click=\"navigate(item)\">{{ item.name }}</button>\n      </li>\n    </ul>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'custom-menu',\n  data() {\n    return {\n\n    }\n  },\n  props: {\n    menuItems: Array,\n    direction: String\n  },\n  methods: {\n    navigate(activeItem) {\n      for (const menuItem of this.menuItems) {\n        menuItem.active = false;\n      }\n      activeItem.active = true;\n      console.log(this.menuItems);\n      this.$emit('navigate', activeItem);\n    }\n  },\n  watch: {\n\n  }\n}\n</script>\n\n<style scoped>\n\n.menu.horizontal ul {\n  display: inline-flex;\n}\n\n.menu.horizontal ul li {\n  margin-right: 10px;\n}\n\nul {\n  list-style: none;\n  padding: 0;\n}\n\n.vertical button {\n  display: block;\n  margin-top: 15px;\n  width: 100%;\n}\nbutton {\n  background: #6A709F;\n  color: black;\n  border-radius: 20px;\n  text-decoration: none;\n  padding: 4px 30px;\n  margin: 0 5px;\n  font-weight: bold;\n  font-family: Arial;\n  border: 2px outset #F9FBFC;\n  font-size: 14px;\n  cursor: pointer;\n}\nbutton:hover,\nbutton.active {\n  background: #fff;\n  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);\n}\n\n</style>",
             "type": "Vue",
             "showCode": true,
+            "visualizeOutput": false
+          }
+        ],
+        "references": [""]
+      }
+    ]
+  },
+  {
+    "name": "Übung 11",
+    "items": [
+      {
+        "heading": "WebAssembly-Modul von Hand erstellen",
+        "name": "Übung 11.1",
+        "content": "",
+        "code": [
+          {
+            "content": "",
+            "type": "HTML",
+            "showCode": false,
+            "visualizeOutput": false
+          }
+        ],
+        "references": [""]
+      },
+      {
+        "heading": "Performanz-Messungen und -Vergleich",
+        "name": "Übung 11.2",
+        "content": "",
+        "code": [
+          {
+            "content": "",
+            "type": "HTML",
+            "showCode": false,
+            "visualizeOutput": false
+          }
+        ],
+        "references": [""]
+      }
+    ]
+  },
+  {
+    "name": "Übung 12",
+    "items": [
+      {
+        "heading": "Sicherer ArrayWrapper",
+        "name": "Übung 12.1",
+        "content": "",
+        "code": [
+          {
+            "content": "",
+            "type": "HTML",
+            "showCode": false,
+            "visualizeOutput": false
+          }
+        ],
+        "references": [""]
+      },
+      {
+        "heading": "WebGoat Injection",
+        "name": "Übung 12.2",
+        "content": "",
+        "code": [
+          {
+            "content": "",
+            "type": "HTML",
+            "showCode": false,
+            "visualizeOutput": false
+          }
+        ],
+        "references": [""]
+      },
+      {
+        "heading": "WebGoat XSS",
+        "name": "Übung 12.3",
+        "content": "",
+        "code": [
+          {
+            "content": "",
+            "type": "HTML",
+            "showCode": false,
+            "visualizeOutput": false
+          }
+        ],
+        "references": [""]
+      },
+      {
+        "heading": "WebGoat Cross-Site Request Forgeries",
+        "name": "Übung 12.4",
+        "content": "",
+        "code": [
+          {
+            "content": "",
+            "type": "HTML",
+            "showCode": false,
             "visualizeOutput": false
           }
         ],
