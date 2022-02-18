@@ -7,6 +7,46 @@
     "paragraph": {
       "content": "Das <p>-Element erzeugt einen Absatz, den zusammenhängenden Abschnitt eines längeren Textes. In HTML kann <p> jedoch für jedwede Art von zu gruppierendem, zusammenhängendem Inhalt genutzt werden, zum Beispiel Bilder oder Formularfelder.",
       "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/p"]
+    },
+    "anchor": {
+      "content": "Das HTML-Element <a> (auch HTML-Anker-Element) definiert einen Hyperlink, ein benanntes Ziel für einen Hyperlink oder beides.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/a"]
+    },
+    "linebreaks": {
+      "content": "Das HTML Element line break <br> produziert einen Zeilenumbruch in (Fließ-)Text (Wagenrücklauf). Es ist z.B nützlich beim Notieren eines Gedichtes oder einer Adresse, wo die Aufteilung der Zeilen von Bedeutung ist.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/br"]
+    },
+    "buttons": {
+      "content": "The <button> HTML element represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality.\n\nBy default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change buttons’ appearance with CSS.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"]
+    },
+    "container": {
+      "content": "Das HTML-Element <div> (Englisch: HTML Document Division Element) ist ein allgemeiner Container für fließenden Inhalt, dem keine semantische Bedeutung zugeordnet wird. Der Einsatzbereich von <div> ist die Gruppierung von Elementen alleine zum Zweck der Gestaltung oder des programmatischen Zugriffs (mit Hilfe des class- oder id-Attributs), oder weil sie die gleichen Attribut-Werte besitzen, wie zum Beispiel das Attribut lang.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/div"]
+    },
+    "forms": {
+      "content": "The <form> HTML element represents a document section containing interactive controls for submitting information.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"]
+    },
+    "input": {
+      "content": "Das HTML-Element <input> ermöglicht es, interaktive Bedienelemente für webbasierte Formulare zu erstellen, die Daten vom Benutzer entgegennehmen.\nEine große Bandbreite verschiedener Eingabedaten und Bedienelemente ist verfügbar, abhängig je nach Gerät und user agent. Das <input> Element ist eine der mächtigsten und komplexesten von allen HTML-Elemente, da es eine ungeheure Anzahl an Kombinationen aus Eingabetypen und Attributen besitzt.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/Input"]
+    },
+    "scripts": {
+      "content": "The <script> HTML element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code. The <script> element can also be used with other languages, such as WebGL's GLSL shader programming language and JSON.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"]
+    },
+    "table": {
+      "content": "Das HTML-Tabellen-Element (<table>) repräsentiert Daten in zwei oder mehr Dimensionen.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/table"]
+    },
+    "lists": {
+      "content": "Das HTML Element unordered list <ul> wird verwendet um eine ungeordnete Liste darzustellen. Eine Sammlung von Einträgen, die keine nummerische Ordung aufweisen bzw. deren Aufzählung bedeutungslos ist. Die einzelnen Einträge der Liste werden durch das list item (<li>) Element definiert, welches das einzige Element ist, was innerhalb eines <ul> Tag stehen darf.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/ul"]
+    },
+    "iframe": {
+      "content": "Mit dem <iframe> HTML Element („inline frame“) kann eine weitere HTML Seite in die aktuelle Seite eingebunden werden.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/HTML/Element/iframe"]
     }
   },
   "css": {
@@ -17,6 +57,46 @@
     "colors": {
       "content": "Der CSS Datentyp Color beschreibt eine Farbe im sRGB Farbraum. Eine Farbe kann auf eine von drei Arten beschrieben werden: Schlüsselworte, rgb und rgba, hsl und hsla. ...",
       "references": ["https://developer.mozilla.org/de/docs/Web/CSS/Farben"]
+    },
+    "syntax": {
+      "content": "The basic goal of the Cascading Stylesheet (CSS) language is to allow a browser engine to paint elements of the page with specific features, like colors, positioning, or decorations. The CSS syntax reflects this goal.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax"]
+    },
+    "units": {
+      "content": "Every CSS declaration includes a property / value pair. Depending on the property, the value can include a single integer or keyword, to a series of keywords and values with or without units. There are a common set of data types -- values and units -- that CSS properties accept. Below is an overview of most of these data types. Refer to the page for each value type for more detailed information.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units"]
+    },
+    "boxmodell": {
+      "content": "Eine Box hat in CSS vier Bereiche: margin edge (weiß außen), border edge (grau), padding edge (grün), und content edge (weiß mitte). Das Folgende Diagramm zeigt die unterschiedlichen Höhen und Breiten anhand der Eigenschaften, die Veränderungen an einer CSS Box zulassen.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model"]
+    },
+    "flexible": {
+      "content": "CSS Flexible is a module of CSS that defines a multi-column layout, allowing to express how content should flows between columns, and how gaps and rules are handled.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS/CSS_Flexible_Box_Layout"]
+    },
+    "grid": {
+      "content": "CSS Grid Layout zeichnet sich dadurch aus, dass eine Seite in Hauptbereiche unterteilt wird oder die Beziehung zwischen Teilen eines Steuerelements, das aus HTML-Grundelementen besteht, in Bezug auf Größe, Position und Layer definiert wird.\n\nGrid Layout ermöglicht es, Elemente in Spalten und Reihen auszurichten, ähnlich wie in Tabellen. Jedoch gibt es viel mehr Gestaltungsmöglichkeiten und diese sind einfacher umzusetzen mit CSS Grid als es mit Tabellen der Fall war. Beispielsweise kann das Kindelement eines Grid-Container-Elements so positioniert werden, dass es andere überlappt und überlagert, ähnlich wie bei mit CSS positionierten Elementen.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout"]
+    },
+    "media-queries": {
+      "content": "Mit Media Queries können Sie Ihre Website oder App abhängig vom Vorhandensein oder Wert verschiedener Geräteeigenschaften und Parameter anpassen.\n\nSie sind eine Schlüsselkomponente des responsiven Designs. Eine Media Query kann zum Beispiel die Schriftgröße auf kleinen Geräten verkleinern, den Abstand zwischen Absätzen vergrößern, wenn eine Seite im Hochformat angezeigt wird, oder die Größe von Schaltflächen auf Touchscreens erhöhen.\n\nVerwenden Sie in CSS die @-Regeln @media, um einen Teil eines Stylesheets basierend auf dem Ergebnis einer Media Query bedingt anzuwenden. Verwenden Sie @import, um ein ganzes Stylesheet bedingt anzuwenden.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS/Media_Queries"]
+    },
+    "animation": {
+      "content": "Die CSS Eigenschaft animation fasst die folgenden Werte zusammen: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count und animation-direction.\n\nEine Beschreibung der animierbaren CSS Eigenschaften ist verfügbar; es sollte auch angemerkt werden, dass diese Beschreibung auch für CSS Übergänge gilt.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/CSS/animation"]
+    },
+    "styling-text": {
+      "content": "With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text"]
+    },
+    "shorthand-properties": {
+      "content": "Shorthand properties are CSS properties that let you set the values of multiple other CSS properties simultaneously. Using a shorthand property, you can write more concise (and often more readable) style sheets, saving time and energy.\n\nThe CSS specification defines shorthand properties to group the definition of common properties acting on the same theme. For instance, the CSS background property is a shorthand property that's able to define the values of background-color, background-image, background-repeat, and background-position. Similarly, the most common font-related properties can be defined using the shorthand font, and the different margins around a box can be defined using the margin shorthand.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties"]
+    },
+    "cascade": {
+      "content": "The cascade is an algorithm that defines how to combine property values originating from different sources. It lies at the core of CSS, as emphasized by the name: Cascading Style Sheets. This article explains what the cascade is, the order in which CSS declarations cascade, and how this affects you, the web developer.",
+      "references": ["https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade"]
     }
   },
   "javascript": {
@@ -27,6 +107,46 @@
     "object": {
       "content": "Ein Objekt ist eine Sammlung von zusammenhängenden Daten und/oder Funktionalitäten. Diese bestehen üblicherweise aus verschiedenen Variablen und Funktionen, die Eigenschaften und Methoden genannt werden, wenn sie sich innerhalb von Objekten befinden.",
       "references": ["https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/Basics"]
+    },
+    "grammar-types": {
+      "content": "avaScript leiht sich den größten Teil seiner Syntax von Java, ist aber auch von Sprachen wie Awk, Perl und Python beeinflusst.\n\nJavaScript ist case-sensitiv (unterscheidet zwischen Groß- und Kleinschreibung) und benutzt den Unicode-Zeichensatz. Zum Beispiel kann das Wort Früh als Variablenname genutzt werden.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Grammar_and_types"]
+    },
+    "control-flow": {
+      "content": "JavaScript unterstützt eine Menge von Anweisungen, speziell um Verlaufs-Anweisungen zu kontrollieren, welches eine großartige Methode ist um Interaktivität in deine Anwendung einzuarbeiten. Dieses Kapitel liefert dir ein Überblick über diese Anweisungen.\n\nDie JavaScript Referenzen beinhalten umfassende Details über die Anweisungen in diesem Kapitel. Das Semikolon (;) als Zeichen wird genutzt um Anweisungen im JavaScript Code einzuteilen.\n\nJeder JavaScript Ausdruck ist auch eine Anweisung. Schau ebenfalls in Ausdrücke und Operatoren, um komplette Informationen über Ausdrücke zu erhalten.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"]
+    },
+    "loops": {
+      "content": "Schleifen sind ein einfaches Werkzeug, um einzelne Schritte wiederholt auszuführen. Dieses Kapitel des JavaScript Guide stellt die verschiedenen Statements für Iterationen vor, welche in JavaScript zur Verfügung stehen.\n\nMan kann sich Schleifen wie eine Computerversion des Spiels vorstellen, bei dem man jemandem sagt, er soll x Schritte in eine Richtung und dann y Schritte in eine andere Richtung gehen. So kann zum Beispiel die Aussage \"Gehe fünf Schritte nach Osten\" mit Hilfe von Schleifen so ausgedrückt werden.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Loops_and_iteration"]
+    },
+    "operators": {
+      "content": "JavaScript verfügt über beides, binäre als auch unäre Operatoren. Zudem existiert ein spezieller ternärer Operator - der Bedingungsoperator. Ein binärer Operator benötigt zwei Operanden, einen vor dem Operator und einen nach dem Operator.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Expressions_and_Operators"]
+    },
+    "numbers": {
+      "content": "In JavaScript sind alle Nummern als double-precision 64-Bit Binärformat IEEE 754 umgesetzt (z.b. eine Zahl zwischen -(253 -1) und 253 -1). Es gibt keinen extra Datentypen für ganze Zahlen (z. B. Integer in anderen Programmiersprachen). Neben der Repräsentation von Gleitkommazahlen hat der Nummern Typ noch drei symbolische Werte: +Infinity, -Infinity, und NaN (not-a-number; keine Nummer). Siehe auch in das Kapitel JavaScript Datentypen und Strukturen für den Umgang mit anderen primitiven Typen in JavaScript.\n\nEs gibt vier verschiedene Nummernliterale: Dezimal-, Binär-, Oktal- und Hexadezimalzahlen.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Numbers_and_dates"]
+    },
+    "text-formatting": {
+      "content": "JavaScript's Datentyp String wird verwendet, um textuelle Daten zu repräsentieren. Es handelt sich um eine Reihe von Elementen, die ganzzahlige 16-Bit-Werte ohne Vorzeichen (UTF-16 Code Units) sind. Jedes Element belegt eine Position im String. Das erste Element befindet hat den Index 0, das nächste den Index 1 usw. Die Länge des Strings ist die Anzahl der Elemente, die darin enthalten sind. Strings können über String-Literale oder String-Objekte erzeugt werden.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Text_formatting"]
+    },
+    "array": {
+      "content": "Ein Array ist ein sortiertes Set an Werten, die mit einem Namen und einem Index referenziert werden. Zum Beispiel könnte ein Array mit dem Namen emp Mitarbeiternamen enthalten, die über ihre Mitarbeiternummer indexiert sind. emp[1] würde somit Mitarbeiter Eins sein, emp[2] ist Mitarbeiter Zwei, und so weiter.\n\nJavaScript hat keinen expliziten Array-Datentyp, aber es ist möglich, das vordefinierte Array Objekt und dessen Methoden zu verwenden, um mit Arrays zu arbeiten. Das Array Objekt verfügt über Methoden, um Arrays auf unterschiedliche Weisen zu manipulieren. Es hat ein Property um die Arraylänge zu bestimmen, und andere Properties für die Verwendung von Regular Expressions.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Indexed_collections"]
+    },
+    "maps": {
+      "content": "ECMAScript 2015 führt eine neue Datenstruktur ein, um Werte auf Werte zu abbildet. Ein Map Objekt ist eine einfache Schlüssel/Werte-Abbildung und man kann über die Element in der Einfügereihenfolge iterieren.\n\nDas folgende Beispiel zeigt einige Basisoperationen mit einer Map.  Für mehr Beispiele und die komplette API siehe zudem die Referenzseite Map. Man kann eine for...of Schleife benutzen, um ein Array von [key, value] für jede Iteration zurückzugeben.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Keyed_collections"]
+    },
+    "promises": {
+      "content": "Ein Promise ist ein Objekt, das die finale Beendigung einer asynchronen Operation repräsentiert. Je nachdem, ob die Operation erfolgreich oder fehlerhaft beendet wurde, wird das Promise entsprechend gekennzeichnet.\n\nDa in den meisten Fällen bereits existierende Promises benutzt werden, wird diese Anleitung zuerst die Benutzung von zurückgegebenen Promises erklären, und dann darauf eingehen, wie diese erzeugt werden.\n\nGrob gesagt ist ein Promise ein zurückgegebenes Objekt, an welches Callback-Funktionen angehängt werden können, anstatt dass diese einer Funktion übergeben werden.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Using_promises"]
+    },
+    "meta-programming": {
+      "content": "Beginnend mit ECMAScript 2015 hat JavaScript Unterstützung für Proxy and Reflect Objekte erhalten, welche das Abfangen und Definieren von benutzerdefinierten Verhaltens für grundlegenden Sprachoperation erlaubt (z. B. Eigenschaftensuche, Zuweisung, Aufzählung, Funktionsaufruf usw.). Mit der Hilfe dieser beiden Objekte ist es möglich auf der Metaebene von JavaScript zu programmieren.",
+      "references": ["https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Meta_programming"]
     }
   }
 }
