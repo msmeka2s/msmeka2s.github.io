@@ -1,0 +1,16 @@
+[
+  {
+    "name": "html",
+    "targets": ["headings", "paragraph"]
+  },
+  {
+    "name": "css",
+    "targets": ["selectors", "colors"]
+  },
+  {
+    "name": "javascript",
+    "targets": ["function", "object"]
+  }
+]
+
+
