@@ -62,11 +62,11 @@ class SpeakersList extends LitElement {
 			<div class="SpeakerList">
 				<h1>Rednerliste</h1>
 				<div class="newSpeakerHandler">
-					<p @keyup="${this.shortcutListener}">
+					<p>
 						Neuer Redner:
 					</p>
 					<div class="form">
-						<input type="text" value="${this.newItem}" @change="${this.updateList}" />
+						<input type="text" value="${this.newItem}" @change="${this.updateList}" @keyup="${this.shortcutListener}" />
 						<button @click="${this.addSpeaker}">Hinzufügen</button>
 						<button @click="${this.clearList}">Liste leeren</button>
 					</div>
@@ -106,7 +106,6 @@ class SpeakersList extends LitElement {
 				speaking: true
 			}];
 			this.startTimer(this.speakers[this.speakers.length - 1]);
-			this.newSpeaker = '';
 		}
 	}
 

@@ -17,7 +17,7 @@ export class Menu extends LitElement {
         border-radius: 20px;
         text-decoration: none;
         padding: 4px 30px;
-        margin: 0 5px;
+        margin: 5px;
         font-weight: bold;
         font-family: Arial;
         border: 2px outset #F9FBFC;

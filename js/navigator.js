@@ -38,6 +38,7 @@ class WwwNavigator extends LitElement {
             width: 100%;
             height: 60vh;
             margin-top: 25px;
+            background: #fff;
           }
           .code {
             text-align: left;

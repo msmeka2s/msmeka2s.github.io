@@ -59,7 +59,7 @@ class GroceryList extends LitElement {
 			<div class="groceryList">
 				<h1>Einkaufsliste</h1>
 				<div class="newItemHandler">
-					<p @keyup="${this.shortcutListener}">
+					<p>
 						Enter a new item:
 					</p>
 					<div class="form">
@@ -67,6 +67,7 @@ class GroceryList extends LitElement {
 							   class="itemName" 
 							   value="${this.newItem}"
 							   @change="${this.updateList}"
+							   @keyup="${this.shortcutListener}"
 						/>
 						<button class="addItem"
 								@click="${this.addItem}"
@@ -104,7 +105,6 @@ class GroceryList extends LitElement {
 				id: this.items.length + 1,
 				name: this.newItem
 			}];
-			this.newItem = '';
 		}
 	}
 
