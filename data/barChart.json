@@ -1,0 +1,37 @@
+[
+  {
+    "party": "SPD",
+    "color": "#E3010F",
+    "numberSeats" : "206"
+  },
+  {
+    "party": "CDU/CSU",
+    "color": "#000",
+    "numberSeats" : "197"
+  },
+  {
+    "party": "Bündnis 90/Die Grünen",
+    "color": "#65A129",
+    "numberSeats" : "118"
+  },
+  {
+    "party": "FDP",
+    "color": "#FFE300",
+    "numberSeats" : "92"
+  },
+  {
+    "party": "AfD",
+    "color": "#00ACD3",
+    "numberSeats" : "80"
+  },
+  {
+    "party": "Die Linke",
+    "color": "#E60E98",
+    "numberSeats" : "39"
+  },
+  {
+    "party": "fraktionslos",
+    "color": "#999",
+    "numberSeats" : "4"
+  }
+]
