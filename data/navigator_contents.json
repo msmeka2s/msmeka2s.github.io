@@ -744,10 +744,17 @@
         "content": "",
         "code": [
           {
-            "content": "",
+            "content": "(module\n (table 0 anyfunc)\n (memory $0 1)\n (export \"memory\" (memory $0))\n (export \"gcd\" (func $gcd))\n (func $gcd (; 0 ;) (param $0 i32) (param $1 i32) (result i32)\n  (local $2 i32)\n  (block $label$0\n   (br_if $label$0\n    (i32.eqz\n     (get_local $1)\n    )\n   )\n   (loop $label$1\n    (set_local $1\n     (i32.rem_s\n      (get_local $0)\n      (tee_local $2\n       (get_local $1)\n      )\n     )\n    )\n    (set_local $0\n     (get_local $2)\n    )\n    (br_if $label$1\n     (get_local $1)\n    )\n   )\n   (return\n    (get_local $2)\n   )\n  )\n  (get_local $0)\n )\n)\n",
+            "type": "WAT",
+            "showCode": true,
+            "visualizeOutput": false
+          },
+          {
+            "headline": "Code für den Test mit allen Zahlen von 1 bis 100",
+            "content": "<!DOCTYPE html>\n<html lang=\"de\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Größter gemeinsamer Teiler</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\n    <style>\n        body {\n            font-family: Arial, Verdana;\n            background: #fff;\n            color: #333;\n        }\n        .item {\n            margin-bottom: 30px;\n            -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n            box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n            border-radius: 5px;\n            padding: 15px;\n            background: #ddd;\n        }\n        h2 {\n            margin: 0;\n        }\n        p {\n            margin: 15px 0 0;\n        }\n        @media (min-width: 768px) {\n            .item {\n                width: 66%;\n            }\n        }\n    </style>\n</head>\n<body>\n    <h1>Größter gemeinsamer Teiler</h1>\n    <div class=\"item\">\n        <h2>Test mit allen Zahlen von 1 bis 100</h2>\n        <ul class=\"output\"></ul>\n    </div>\n    <div class=\"output\"></div>\n    <script>\n        async function fetchAndInstantiate() {\n            const response = await fetch(\"data/gcd.wasm\");\n            const buffer = await response.arrayBuffer();\n            const wasm = await WebAssembly.instantiate(buffer);\n            const gcd = wasm.instance.exports.gcd;\n            const output = document.querySelector('ul.output');\n            for (let i = 1; i <= 100; i++) {\n                for (let j = 1; j <= 100; j++) {\n                    const newItem = document.createElement('li');\n                    newItem.innerHTML = `Der ggT von <i>${i}</i> und <i>${j}</i> ist: <b>${gcd(i, j)}</b>`;\n                    output.append(newItem);\n                }\n            }\n        }\n        fetchAndInstantiate();\n    </script>\n</body>\n</html>",
             "type": "HTML",
             "showCode": false,
-            "visualizeOutput": false
+            "visualizeOutput": true
           }
         ],
         "references": [""]
