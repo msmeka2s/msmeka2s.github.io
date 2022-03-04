@@ -186,8 +186,8 @@ class WwwNavigator extends LitElement {
               <div class="header">
                   <div class="nav">
                       <a class="button" href="index.html">Home</a>
-                      <a class="button" href="#">Github</a>
-                      <a class="button" href="#">Storybook</a>
+                      <a class="button" href="https://github.com/msmeka2s/msmeka2s.github.io">Github</a>
+                      <a class="button" href="https://62092df03f9160003a96c6b0-lwnqjafwrq.chromatic.com">Storybook</a>
                   </div>
               </div>
               <div class="leftSide">
@@ -234,8 +234,8 @@ class WwwNavigator extends LitElement {
               </div>
               <div class="footer">
                   <a href="index.html">Home</a>
-                  <a href="#">Github</a>
-                  <a href="#">Storybook</a>
+                  <a href="https://github.com/msmeka2s/msmeka2s.github.io">Github</a>
+                  <a href="https://62092df03f9160003a96c6b0-lwnqjafwrq.chromatic.com">Storybook</a>
               </div>
             </div>
           </div>
