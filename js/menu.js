@@ -19,7 +19,7 @@ export class Menu extends LitElement {
         padding: 10px 15px;
         margin: 0 1px;
         font-weight: bold;
-        font-family: Arial;
+        font-family: Verdana, Arial, sans-serif;
         border: 2px outset #F9FBFC;
         font-size: 14px;
         cursor: pointer;
@@ -38,7 +38,7 @@ export class Menu extends LitElement {
       }
       @media (min-width: 1200px) {
         .menu.vertical button {
-          width: 120px;
+          width: 150px;
         }
       }
     `;

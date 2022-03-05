@@ -1,6 +1,6 @@
 [
   {
-    "name": "Übung 1",
+    "name": "Übung 1 - Einführung",
     "items": [
       {
         "heading": "Fachliche Argumentation über Erfolgsprinzipien des WWW",
@@ -15,7 +15,7 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/HTML"
+          "https://www.w3.org/"
         ]
       },
       {
@@ -31,7 +31,7 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/HTML"
+          "https://developer.mozilla.org/de/docs/Web/HTTP/Status"
         ]
       },
       {
@@ -47,7 +47,8 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/HTML"
+          "https://developer.mozilla.org/de/docs/Web/HTML",
+          "https://developer.mozilla.org/de/docs/Web/CSS"
         ]
       },
       {
@@ -63,7 +64,8 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/HTML"
+          "https://developer.mozilla.org/de/docs/Web/HTML",
+          "https://developer.mozilla.org/de/docs/Web/CSS"
         ]
       },
       {
@@ -79,13 +81,14 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/HTML"
+          "https://developer.mozilla.org/de/docs/Web/HTML",
+          "https://developer.mozilla.org/de/docs/Web/CSS"
         ]
       }
     ]
   },
   {
-    "name": "Übung 2",
+    "name": "Übung 2 - Responsives Web",
     "items": [
       {
         "heading": "Flexbox",
@@ -100,7 +103,9 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/CSS"
+          "https://developer.mozilla.org/de/docs/Web/CSS",
+          "https://developer.mozilla.org/de/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox",
+          "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
         ]
       },
       {
@@ -116,7 +121,9 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/CSS"
+          "https://developer.mozilla.org/de/docs/Web/CSS",
+          "https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout",
+          "https://css-tricks.com/snippets/css/complete-guide-grid/"
         ]
       },
       {
@@ -132,7 +139,10 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/CSS"
+          "https://developer.mozilla.org/de/docs/Web/CSS",
+          "https://developer.mozilla.org/de/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox",
+          "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+          "https://en.wikipedia.org/wiki/Holy_grail_(web_design)"
         ]
       },
       {
@@ -148,7 +158,10 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/CSS"
+          "https://developer.mozilla.org/de/docs/Web/CSS",
+          "https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout",
+          "https://css-tricks.com/snippets/css/complete-guide-grid/",
+          "https://en.wikipedia.org/wiki/Holy_grail_(web_design)"
         ]
       },
       {
@@ -164,13 +177,15 @@
           }
         ],
         "references": [
-          "https://developer.mozilla.org/de/docs/Web/CSS"
+          "https://developer.mozilla.org/de/docs/Web/CSS",
+          "https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout",
+          "https://css-tricks.com/snippets/css/complete-guide-grid/"
         ]
       }
     ]
   },
   {
-    "name": "Übung 3",
+    "name": "Übung 3 - Javascript",
     "items": [
       {
         "heading": "Funktionen in JavaScript",
@@ -207,7 +222,7 @@
     ]
   },
   {
-    "name": "Übung 4",
+    "name": "Übung 4 - DOM",
     "items": [
       {
         "heading": "Einkaufsliste",
@@ -222,7 +237,10 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction",
+          "https://wiki.selfhtml.org/wiki/JavaScript/DOM",
+          "https://www.w3schools.com/js/js_htmldom.asp"
         ]
       },
       {
@@ -238,7 +256,11 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction",
+          "https://wiki.selfhtml.org/wiki/JavaScript/DOM",
+          "https://www.w3schools.com/js/js_htmldom.asp",
+          "https://www.w3schools.com/js/js_timing.asp"
         ]
       },
       {
@@ -254,7 +276,10 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction",
+          "https://wiki.selfhtml.org/wiki/JavaScript/DOM",
+          "https://www.w3schools.com/js/js_htmldom.asp"
         ]
       },
       {
@@ -270,14 +295,18 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction",
+          "https://wiki.selfhtml.org/wiki/JavaScript/DOM",
+          "https://www.w3schools.com/js/js_htmldom.asp",
+          "https://code.tutsplus.com/tutorials/create-a-wysiwyg-editor-with-the-contenteditable-attribute--cms-25657"
         ]
       }
     ]
   },
   {
 
-    "name": "Übung 5",
+    "name": "Übung 5 - Asynchron",
     "items": [
       {
         "heading": "Promises",
@@ -292,7 +321,9 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
         ]
       },
       {
@@ -308,7 +339,9 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+          "https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/async_function"
         ]
       },
       {
@@ -346,7 +379,8 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers"
         ]
       },
       {
@@ -362,13 +396,15 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/JSON"
         ]
       }
     ]
   },
   {
-    "name": "Übung 6",
+    "name": "Übung 6 - SVG",
     "items": [
       {
         "heading": "Statistik-Balkendiagramm in SVG",
@@ -383,7 +419,9 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Web/SVG",
+          "https://www.bundestag.de/parlament/plenum/sitzverteilung_20wp",
+          "https://www.highcharts.com/demo/bar-basic"
         ]
       },
       {
@@ -399,7 +437,8 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Web/SVG",
+          "https://pomax.github.io/bezierinfo/#introduction"
         ]
       },
       {
@@ -415,13 +454,14 @@
           }
         ],
         "references": [
-          ""
+          "https://developer.mozilla.org/de/docs/Web/SVG",
+          "https://www.youtube.com/watch?v=Km2KsZBqktQ"
         ]
       }
     ]
   },
   {
-    "name": "Übung 7",
+    "name": "Übung 7 - Node",
     "items": [
       {
         "heading": "File Generatoren",
@@ -450,7 +490,11 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://nodejs.org/en/",
+          "https://www.w3schools.com/nodejs/nodejs_intro.asp",
+          "https://www.ecma-international.org/wp-content/uploads/ECMA-262_12th_edition_june_2021.pdf"
+        ]
       },
       {
         "heading": "Performance Merge",
@@ -486,7 +530,11 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://nodejs.org/en/",
+          "https://www.w3schools.com/nodejs/nodejs_intro.asp",
+          "https://www.ecma-international.org/wp-content/uploads/ECMA-262_12th_edition_june_2021.pdf"
+        ]
       },
       {
         "heading": "Express.js Server",
@@ -508,12 +556,17 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://nodejs.org/en/",
+          "https://www.w3schools.com/nodejs/nodejs_intro.asp",
+          "https://expressjs.com/de/",
+          "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction"
+        ]
       }
     ]
   },
   {
-    "name": "Übung 8",
+    "name": "Übung 8 - Modular Web",
     "items": [
       {
         "heading": "Web-Komponenten erstellen",
@@ -563,7 +616,12 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/de/docs/Web/Web_Components",
+          "https://lit.dev/",
+          "https://lit.dev/docs/api/LitElement/"
+        ]
       },
       {
         "heading": "LitElement Menü-Komponente",
@@ -585,7 +643,12 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/de/docs/Web/Web_Components",
+          "https://lit.dev/",
+          "https://lit.dev/docs/api/LitElement/"
+        ]
       },
       {
         "heading": "LitElement WWW-Navigator",
@@ -607,12 +670,17 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://developer.mozilla.org/de/docs/Learn/JavaScript",
+          "https://developer.mozilla.org/de/docs/Web/Web_Components",
+          "https://lit.dev/",
+          "https://lit.dev/docs/api/LitElement/"
+        ]
       }
     ]
   },
   {
-    "name": "Übung 9",
+    "name": "Übung 9 - PWA",
     "items": [
       {
         "heading": "PWA",
@@ -626,12 +694,16 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://developer.mozilla.org/de/docs/Web/Progressive_web_apps",
+          "https://developers.google.com/web/tools/lighthouse",
+          "https://www.youtube.com/watch?v=E8BeSSdIUW4"
+        ]
       }
     ]
   },
   {
-    "name": "Übung 10",
+    "name": "Übung 10 - Vue",
     "items": [
       {
         "heading": "Komponente in Vue.js",
@@ -659,7 +731,11 @@
             "visualizeOutput": false
           }
         ],
-        "references": [""]
+        "references": [
+          "https://vuejs.org/",
+          "https://vuejs.org/guide/essentials/component-basics.html",
+          "https://vuejs.org/guide/scaling-up/sfc.html"
+        ]
       },
       {
         "heading": "Menü-Komponente",
@@ -688,7 +764,11 @@
             "visualizeOutput": false
           }
         ],
-        "references": [""]
+        "references": [
+          "https://vuejs.org/",
+          "https://vuejs.org/guide/essentials/component-basics.html",
+          "https://vuejs.org/guide/scaling-up/sfc.html"
+        ]
       },
       {
         "heading": "Vue.js WWW-Navigator",
@@ -731,12 +811,16 @@
             "visualizeOutput": false
           }
         ],
-        "references": [""]
+        "references": [
+          "https://vuejs.org/",
+          "https://vuejs.org/guide/essentials/component-basics.html",
+          "https://vuejs.org/guide/scaling-up/sfc.html"
+        ]
       }
     ]
   },
   {
-    "name": "Übung 11",
+    "name": "Übung 11 - WebAssembly",
     "items": [
       {
         "heading": "WebAssembly-Modul von Hand erstellen",
@@ -757,7 +841,11 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://webassembly.org/",
+          "https://webassembly.github.io/spec/core/text/index.html",
+          "https://developer.mozilla.org/en-US/docs/WebAssembly"
+        ]
       },
       {
         "heading": "Performanz-Messungen und -Vergleich",
@@ -797,12 +885,16 @@
             "visualizeOutput": true
           }
         ],
-        "references": [""]
+        "references": [
+          "https://webassembly.org/",
+          "https://webassembly.github.io/spec/core/text/index.html",
+          "https://developer.mozilla.org/en-US/docs/WebAssembly"
+        ]
       }
     ]
   },
   {
-    "name": "Übung 12",
+    "name": "Übung 12 - Security",
     "items": [
       {
         "heading": "Sicherer ArrayWrapper",
@@ -822,7 +914,9 @@
             "visualizeOutput": false
           }
         ],
-        "references": [""]
+        "references": [
+          "https://developer.mozilla.org/en-US/docs/Web/Security"
+        ]
       },
       {
         "heading": "WebGoat Injection",
@@ -836,7 +930,10 @@
             "visualizeOutput": false
           }
         ],
-        "references": [""]
+        "references": [
+          "https://developer.mozilla.org/en-US/docs/Web/Security",
+          "https://github.com/WebGoat/WebGoat#1-run-using-docker"
+        ]
       },
       {
         "heading": "WebGoat XSS",
@@ -850,7 +947,10 @@
             "visualizeOutput": false
           }
         ],
-        "references": [""]
+        "references": [
+          "https://developer.mozilla.org/en-US/docs/Web/Security",
+          "https://github.com/WebGoat/WebGoat#1-run-using-docker"
+        ]
       },
       {
         "heading": "WebGoat Cross-Site Request Forgeries",
@@ -862,6 +962,28 @@
             "type": "HTML",
             "showCode": false,
             "visualizeOutput": false
+          }
+        ],
+        "references": [
+          "https://developer.mozilla.org/en-US/docs/Web/Security",
+          "https://github.com/WebGoat/WebGoat#1-run-using-docker"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Zusätzlicher Inhalt",
+    "items": [
+      {
+        "heading": "Retrospektive",
+        "name": "Retrospektive",
+        "content": "",
+        "code": [
+          {
+            "content": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Retrospektive</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: Arial, Verdana;\n\t\t\t\tbackground: #fff;\n\t\t\t\tcolor: #333;\n\t\t\t}\n\t\t\t.item {\n\t\t\t\tmargin-bottom: 30px;\n\t\t\t\t-webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tbox-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);\n\t\t\t\tborder-radius: 5px;\n\t\t\t\tpadding: 15px;\n\t\t\t\tbackground: #ddd;\n\t\t\t}\n\t\t\th2 {\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t\tp {\n\t\t\t\tmargin: 15px 0 0;\n\t\t\t}\n\t\t\tul li {\n\t\t\t\tline-height: 1.33;\n\t\t\t}\n\t\t\t@media (min-width: 768px) {\n\t\t\t\t.item {\n\t\t\t\t\twidth: 66%;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"item\">\n\t\t\t<h2>Was war gut?</h2>\n\t\t\t<ul>\n\t\t\t\t<li>Umsetzung des responsiven Designs für Smartphone / Tablet und Desktop Ansichten</li>\n\t\t\t\t<li>Auslagerung des Inhalts in separate JSON Datei und Navigation ausschließlich über JS</li>\n\t\t\t\t<li>Umsetzung der Anwendung mit LitElement Komponenten</li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Was hätte besser sein können?</h2>\n\t\t\t<ul>\n\t\t\t\t<li>Sicherheitskonzept</li>\n\t\t\t\t<li>Einteilung der Anwendung in mehr Komponenten (modularerer Aufbau)</li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Was habe ich gelernt (größte Learnings)</h2>\n\t\t\t<ul>\n\t\t\t\t<li>Arbeiten mit Grid und Flexbox für die Umsetzung eines responsiven Designs in CSS</li>\n\t\t\t\t<li>Asynchrones Laden von Daten über die Fetch-API mittels Javascript</li>\n\t\t\t\t<li>Eigenständiges Erstellen von interaktiven SVG-Grafiken</li>\n\t\t\t\t<li>Erstellung von Web-Komponenten mit LitElement</li>\n\t\t\t\t<li>Anwendung von PWA-Technologien für die Erstellung einer progressive Web-App</li>\n\t\t\t\t<li>WebAssembly</li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<div class=\"item\">\n\t\t\t<h2>Wo gibt es noch Verbesserungspotential bzw. was würde ich nächstes Mal anders machen?</h2>\n\t\t\t<ul>\n\t\t\t\t<li>\n\t\t\t\t\tSchon vor der Umsetzung überlegen, wie die Ansichten auf Smartphone, Tablet und Desktop dargestellt werden sollen <br>\n\t\t\t\t\t<i>(Nachträgliches Optimierungen für verschiedene Bildschirmgrößen ist deutlich aufwändiger)</i>\n\t\t\t\t</li>\n\t\t\t\t<li>Möglichst früh eine sinnvolle Einteilung in Web-Komponenten festlegen (modularer Aufbau)</li>\n\t\t\t\t<li>Frühzeitig gutes Sicherheitskonzept überlegen</li>\n\t\t\t\t<li>evtl. zukünftig anderes Framework für die Umsetzung der Web-Komponenten als LitElement (z.B. Vue)</li>\n\t\t\t\t<li>Intensivere Beschäftigung mit Node und den verfügbaren Node Modulen</li>\n\t\t\t</ul>\n\t\t</div>\n\t</body>\n</html>",
+            "type": "HTML",
+            "showCode": false,
+            "visualizeOutput": true
           }
         ],
         "references": [""]

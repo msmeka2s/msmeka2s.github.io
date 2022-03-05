@@ -89,7 +89,7 @@ class WwwNavigator extends LitElement {
             max-width: 150px;
           }
           .rightSide p {
-            margin: 0 0 5px;
+            margin: 0 0 10px;
           }
           .rightSide a {
             word-break: break-word;
@@ -104,6 +104,10 @@ class WwwNavigator extends LitElement {
           }
           .mainContent p.small {
             font-size: 0.875em;
+          }
+          .mainContent .intro .textContent {
+            text-align: left;
+            padding: 0 80px;
           }
           .footer {
             background: #1d8217;
@@ -208,7 +212,27 @@ class WwwNavigator extends LitElement {
                       ` : html `
                           <h1>Web Engineering Masterkurs - Wintersemester 21/22</h1>
                           <h2>Präsentation des Semesterprojektes</h2>
-                          <p>Von Maximilian Smekal</p>
+                          <p><small>Von Maximilian Smekal</small></p>
+                          <br>
+                          <div class="textContent">
+                              <p>
+                                  Herzlich Willkommen auf meiner Webseite zur Präsentation des Semesterprojektes im Masterkurs Web Engineering. 
+                                  Während des Semesters wurden insgesamt 12 Übungen bearbeitet, welche durch die Navigation auf der linken Seite 
+                                  betrachtet werden können. Das Ergebnis der jeweiligen Übungen ist dabei als ein eigenständiger <code>iframe</code> eingebunden. 
+                                  Außerdem ist der Quellcode unterhalb der Ergebnisse sichtbar. Mögliche Referenzen bzw. Quellenangaben sind auf der rechten Seite
+                                  dargestellt.
+                              </p>
+                              <p>
+                                  Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt, welches über die Header- oder
+                                  Footer-Navigation erreicht werden kann. Hier sind die einzelnen Vue-komponenten aus der Übung mitsamt der verschiedenen 
+                                  Einstellungsmöglichkeiten sichtbar.
+                              </p>
+                              <p>
+                                  Die Webseite an sich wurde responsiv mit dem Grid bzw. Flexbox Layout erstellt und auch für mobile Ansichten optimiert.
+                                  Um einzelne Teile der Webseite besser voneinander kapseln zu können und einen modularen Aufbau zu gewährleisten 
+                                  besteht die Webseite aus einzelnen Webkomponenten die mithilfe des LitElement-Frameworks realisiert wurden.
+                              </p>
+                          </div>
                       ` }
                   </div>
                   <div class="exerciseDisplay ${this.sourceCodes ? '' : 'hidden'}">
@@ -229,7 +253,7 @@ class WwwNavigator extends LitElement {
               </div>
               <div class="rightSide">
                 ${this.references ? this.references.map(reference => html`
-                  <p><a href="${reference}">${reference}</a></p>
+                  <p><small><a href="${reference}">${reference}</a></small></p>
                 `) : 'Additional Information: Links to external ressources'}
               </div>
               <div class="footer">
