@@ -4,26 +4,30 @@ export class Menu extends LitElement {
 
   static get styles() {
     return css`
+      .menu.vertical {
+        display: flex;
+        flex-wrap: wrap;
+      }
       .vertical button {
         display: block;
         margin-top: 5px;
       }
       .menu.vertical button {
         display: inline;
+        flex-basis: 32%;
       }
       button {
         background: #6A709F;
         color: black;
         border-radius: 20px;
         text-decoration: none;
-        padding: 10px 15px;
-        margin: 0 1px;
+        padding: 10px;
+        margin: 0 2px;
         font-weight: bold;
         font-family: Verdana, Arial, sans-serif;
         border: 2px outset #F9FBFC;
-        font-size: 14px;
+        font-size: 12px;
         cursor: pointer;
-        width: 100px;
       }
       button:hover,
       button.active {
@@ -31,13 +35,12 @@ export class Menu extends LitElement {
         box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
       }
       @media (min-width: 600px) {
+        .menu.vertical {
+          display: block;
+        }
         .menu.vertical button {
           display: block;
           margin-top: 10px;
-        }
-      }
-      @media (min-width: 1200px) {
-        .menu.vertical button {
           width: 150px;
         }
       }

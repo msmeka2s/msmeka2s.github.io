@@ -107,7 +107,6 @@ class WwwNavigator extends LitElement {
           }
           .mainContent .intro .textContent {
             text-align: left;
-            padding: 0 80px;
           }
           .footer {
             background: #1d8217;
@@ -138,6 +137,9 @@ class WwwNavigator extends LitElement {
               grid-column-start: 2;
               grid-column-end: 3;
             }
+            .mainContent .intro .textContent {
+              padding: 0 25px;
+            }
           }
           @media (min-width: 1200px) {
             html, body {
@@ -153,6 +155,9 @@ class WwwNavigator extends LitElement {
               grid-column-start: 3;
               grid-column-end: 3;
               max-width: 200px;
+            }
+            .mainContent .intro .textContent {
+              padding: 0 80px;
             }
           }
         `;
