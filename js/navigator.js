@@ -117,18 +117,15 @@ class WwwNavigator extends LitElement {
           @media (min-width: 600px) {
             .layoutContainer {
               display: grid;
-              grid-template: auto 1fr / auto 1fr auto auto;
+              grid-template: auto 1fr auto auto / auto 1fr;
               text-align: center;
             }
             .header, .footer {
-              grid-column: 1 / 4;
+              grid-column: 1 / 3;
             }
             .leftSide {
               grid-row: 2 / 4;
               padding: 10px 20px;
-            }
-            .mainContent {
-              grid-column: 2 / 3;
             }
             .rightSide {
               grid-column-start: 2;
@@ -151,6 +148,9 @@ class WwwNavigator extends LitElement {
             }
             .mainContent .intro .textContent {
               padding: 0 80px;
+            }
+            .header, .footer {
+              grid-column: 1 / 4;
             }
           }
         `;
