@@ -76,9 +76,6 @@ class WwwNavigator extends LitElement {
           .header .nav {
             margin-top: 20px;
           }
-          .header, .footer {
-            grid-column: 1 / 4;
-          }
           .leftSide, .rightSide {
             padding: 10px;
             background: #ad6a3d;
@@ -122,7 +119,9 @@ class WwwNavigator extends LitElement {
               display: grid;
               grid-template: auto 1fr / auto 1fr auto auto;
               text-align: center;
-              
+            }
+            .header, .footer {
+              grid-column: 1 / 4;
             }
             .leftSide {
               grid-row: 2 / 4;
