@@ -4,7 +4,7 @@ class WwwNavigator extends LitElement {
 
     static get styles() {
         return css`
-          .gridContainer {
+          .layoutContainer {
             display: flex;
             flex-direction: column;
             margin: 10px;
@@ -118,20 +118,18 @@ class WwwNavigator extends LitElement {
             margin: 0 15px;
           }
           @media (min-width: 600px) {
-            .gridContainer {
+            .layoutContainer {
               display: grid;
-              grid-template: auto 1fr auto / auto 1fr auto;
+              grid-template: auto 1fr / auto 1fr auto auto;
               text-align: center;
               
             }
             .leftSide {
-              grid-row-start: 2;
-              grid-row-end: 4;
+              grid-row: 2 / 4;
               padding: 10px 20px;
             }
             .mainContent {
-              grid-column-start: 2;
-              grid-column-end: 3;
+              grid-column: 2 / 3;
             }
             .rightSide {
               grid-column-start: 2;
@@ -145,15 +143,11 @@ class WwwNavigator extends LitElement {
             html, body {
               height: 100%;
             }
-            .gridContainer .leftSide {
-              grid-row-end: 3;
+            .layoutContainer {
+              grid-template: auto 1fr auto / auto 1fr auto;
             }
-            .gridContainer .mainContent {
-              grid-column-end: 2;
-            }
-            .gridContainer .rightSide {
-              grid-column-start: 3;
-              grid-column-end: 3;
+            .layoutContainer .rightSide {
+              grid-column: 3 / 4;
               max-width: 200px;
             }
             .mainContent .intro .textContent {
@@ -191,7 +185,7 @@ class WwwNavigator extends LitElement {
             this.getInitialSubmenu();
         }
         return html`
-            <div class="gridContainer">
+            <div class="layoutContainer">
               <div class="header">
                   <div class="nav">
                       <a class="button" href="index.html">Home</a>
@@ -228,14 +222,14 @@ class WwwNavigator extends LitElement {
                                   dargestellt.
                               </p>
                               <p>
-                                  Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt, welches über die Header- oder
-                                  Footer-Navigation erreicht werden kann. Hier sind die einzelnen Vue-komponenten aus der Übung mitsamt der verschiedenen 
-                                  Einstellungsmöglichkeiten sichtbar.
+                                  Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt, 
+                                  welches über die Header-Navigation erreicht werden kann. Hier sind die einzelnen Vue-komponenten aus der 
+                                  Übung mitsamt der verschiedenen Einstellungsmöglichkeiten sichtbar.
                               </p>
                               <p>
                                   Die Webseite an sich wurde responsiv mit dem Grid bzw. Flexbox Layout erstellt und auch für mobile Ansichten optimiert.
                                   Um einzelne Teile der Webseite besser voneinander kapseln zu können und einen modularen Aufbau zu gewährleisten 
-                                  besteht die Webseite aus einzelnen Webkomponenten die mithilfe des LitElement-Frameworks realisiert wurden.
+                                  besteht die Webseite aus einzelnen Webkomponenten, die mithilfe des LitElement-Frameworks realisiert wurden.
                               </p>
                           </div>
                       ` }
@@ -257,14 +251,14 @@ class WwwNavigator extends LitElement {
                   </div>
               </div>
               <div class="rightSide">
-                ${this.references ? this.references.map(reference => html`
+                ${this.references && this.references.length > 0 ? this.references.map(reference => html`
                   <p><small><a href="${reference}">${reference}</a></small></p>
                 `) : 'Additional Information: Links to external ressources'}
               </div>
               <div class="footer">
                   <a href="index.html">Home</a>
-                  <a target="_blank" href="https://github.com/msmeka2s/msmeka2s.github.io">Github</a>
-                  <a target="_blank" href="https://62092df03f9160003a96c6b0-jlcymeqjba.chromatic.com">Storybook</a>
+                  <a target="_blank" href="https://www.h-brs.de/de/impressum">Impressum (HBRS)</a>
+                  <a target="_blank" href="https://www.h-brs.de/de/datenschutz">Datenschutzerklärung (HBRS)</a>
               </div>
             </div>
           </div>
