@@ -105,6 +105,13 @@ class WwwNavigator extends LitElement {
           .mainContent .intro .textContent {
             text-align: left;
           }
+          .mainContent .intro .textContent li {
+            line-height: 1.5;
+          }
+          .mainContent .taskDescription {
+            text-align: left;
+            line-height: 1.2;
+          }
           .footer {
             background: #1d8217;
             padding: 15px 0 20px;
@@ -159,24 +166,26 @@ class WwwNavigator extends LitElement {
     static get properties() {
         return {
             heading: { type: String },
-            mainContent: { type: String },
             references: { type: Array },
-            sourceCodes: { type: Array },
+            content: { type: Array },
             subNav: { type: Array },
             resetSubmenu: {type: Boolean},
             showBacklink: {type: Boolean},
+            introText: { type: String },
+            taskDescription: {type: String}
         }
     }
 
     constructor() {
         super();
         this.heading = '';
-        this.mainContent = '';
         this.references = [];
-        this.sourceCodes = [];
+        this.content = [];
         this.subNav = [];
         this.resetSubmenu = false;
         this.showBacklink = false;
+        this.getInitialIntrotext();
+        this.taskDescription = null;
     }
 
     render() {
@@ -212,39 +221,26 @@ class WwwNavigator extends LitElement {
                           <h2>Präsentation des Semesterprojektes</h2>
                           <p><small>Von Maximilian Smekal</small></p>
                           <br>
-                          <div class="textContent">
-                              <p>
-                                  Herzlich Willkommen auf meiner Webseite zur Präsentation des Semesterprojektes im Masterkurs Web Engineering. 
-                                  Während des Semesters wurden insgesamt 12 Übungen bearbeitet, welche durch die Navigation auf der linken Seite 
-                                  betrachtet werden können. Das Ergebnis der jeweiligen Übungen ist dabei als ein eigenständiger <code>iframe</code> eingebunden. 
-                                  Außerdem ist der Quellcode unterhalb der Ergebnisse sichtbar. Mögliche Referenzen bzw. Quellenangaben sind auf der rechten Seite
-                                  dargestellt.
-                              </p>
-                              <p>
-                                  Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt, 
-                                  welches über die Header-Navigation erreicht werden kann. Hier sind die einzelnen Vue-komponenten aus der 
-                                  Übung mitsamt der verschiedenen Einstellungsmöglichkeiten sichtbar.
-                              </p>
-                              <p>
-                                  Die Webseite an sich wurde responsiv mit dem Grid bzw. Flexbox Layout erstellt und auch für mobile Ansichten optimiert.
-                                  Um einzelne Teile der Webseite besser voneinander kapseln zu können und einen modularen Aufbau zu gewährleisten 
-                                  besteht die Webseite aus einzelnen Webkomponenten, die mithilfe des LitElement-Frameworks realisiert wurden.
-                              </p>
-                          </div>
-                      ` }
+                      `}
+                      <div class="textContent">
+                          ${this.introText}
+                      </div>
                   </div>
-                  <div class="exerciseDisplay ${this.sourceCodes ? '' : 'hidden'}">
-                      ${this.sourceCodes ? this.sourceCodes.map(code => html`
-                          ${code.visualizeOutput ? html`
-                            <iframe srcdoc='${code.content}'></iframe>
+                  <div class="taskDescription">
+                      ${this.taskDescription ? html`<p><b>Aufgabenstellung: </b><small>${this.taskDescription}</small></p>` : ``}
+                  </div>
+                  <div class="exerciseDisplay ${this.content ? '' : 'hidden'}">
+                      ${this.content ? this.content.map(content => html`
+                          ${content.visualizeOutput ? html`
+                            <iframe srcdoc='${content.code}'></iframe>
                           ` : ''}
                       `) : 'No source code available'}
                   </div>
-                  <div class="code ${this.sourceCodes ? '' : 'hidden'}">
-                      ${this.sourceCodes ? this.sourceCodes.map(code => html`
-                          ${code.showCode ? html`
-                              <h3>${code.headline ? code.headline : code.type + '-Quellcode'}</h3>
-                              <pre><code>${code.content}</code></pre>
+                  <div class="code ${this.content ? '' : 'hidden'}">
+                      ${this.content ? this.content.map(content => html`
+                          ${content.showCode ? html`
+                              <h3>${content.headline ? content.headline : content.type + '-Quellcode'}</h3>
+                              <pre><code>${content.code}</code></pre>
                           ` : ''}
                       `) : 'No source code available'}
                   </div>
@@ -273,22 +269,67 @@ class WwwNavigator extends LitElement {
 
     updateContent(e) {
         const activeMenuItem = e.detail.activeMenuItem;
-        this.heading = activeMenuItem.heading ?? '';
-        this.mainContent = activeMenuItem.content ?? '';
-        this.sourceCodes = activeMenuItem.code ?? [];
+        if (activeMenuItem.items) {
+            if (activeMenuItem.learningObjectives) {
+                this.introText = html`
+                    <h2>Lernziele</h2>
+                    <ol>
+                        ${activeMenuItem.learningObjectives.map(learningObjective => html`
+                            <li>${learningObjective}</li>
+                        `)}
+                    </ol>
+                    <br>
+                    <p><small><i>Die Unteraufgaben können über die Seitennavigation auf der linken Seite betrachtet werden.</i></small></p>
+                `;
+            } else {
+                this.introText = html`
+                    <br><br>
+                    <p><small><i>Zusätzliche Inhalte können über die Seitennavigation betrachtet werden.</i></small></p>
+                `;
+            }
+        } else {
+            this.introText = null;
+        }
+
+        this.heading = activeMenuItem.heading ?? activeMenuItem.name;
+        this.content = activeMenuItem.content ?? [];
         this.references = activeMenuItem.references ?? [];
         this.subNav = [];
         this.resetSubmenu = false;
         this.showBacklink = true;
+        this.taskDescription = activeMenuItem.task ?? null;
     }
 
     triggerResetSubmenu() {
         this.resetSubmenu = true;
         this.heading = '';
-        this.mainContent = '';
-        this.sourceCodes = [];
+        this.content = [];
         this.references = [];
         this.showBacklink = false;
+        this.getInitialIntrotext();
+        this.taskDescription = null;
+    }
+
+    getInitialIntrotext() {
+        this.introText = html`
+            <p>
+                  Herzlich Willkommen auf meiner Webseite zur Präsentation des Semesterprojektes im Masterkurs Web Engineering. 
+                  Während des Semesters wurden insgesamt 12 Übungen bearbeitet, welche durch die Navigation auf der linken Seite 
+                  betrachtet werden können. Das Ergebnis der jeweiligen Übungen ist dabei als ein eigenständiger <code>iframe</code> eingebunden. 
+                  Außerdem ist der Quellcode unterhalb der Ergebnisse sichtbar. Mögliche Referenzen bzw. Quellenangaben sind auf der rechten Seite
+                  dargestellt.
+              </p>
+              <p>
+                  Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt, 
+                  welches über die Header-Navigation erreicht werden kann. Hier sind die einzelnen Vue-komponenten aus der 
+                  Übung mitsamt der verschiedenen Einstellungsmöglichkeiten sichtbar.
+              </p>
+              <p>
+                  Die Webseite an sich wurde responsiv mit dem Grid bzw. Flexbox Layout erstellt und auch für mobile Ansichten optimiert.
+                  Um einzelne Teile der Webseite besser voneinander kapseln zu können und einen modularen Aufbau zu gewährleisten 
+                  besteht die Webseite aus einzelnen Webkomponenten, die mithilfe des LitElement-Frameworks realisiert wurden.
+              </p>
+        `;
     }
 
 }
