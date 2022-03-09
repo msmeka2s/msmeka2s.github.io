@@ -9,7 +9,7 @@ class WwwNavigator extends LitElement {
             flex-direction: column;
             margin: 10px;
             border-radius: 10px;
-            color:  white;
+            color: #ddd;
           }
           .hidden {
             display: none;
@@ -18,39 +18,42 @@ class WwwNavigator extends LitElement {
             font-weight: normal;
           }
           .button {
-            background: #45a5ff;
-            color: black;
-            border-radius: 14px;
+            background: #2d3d48;
+            color: #0d0;
+            border-radius: 15px;
             text-decoration: none;
-            padding: 8px 12px;
-            margin: 0 10px;
+            padding: 10px 16px;
+            margin: 0 8px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 15px;
             -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); 
-            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            margin-bottom: 10px;
           }
             
           .button.active,
           .button:hover {
-            background: #0565bf;
+            background: #4e5e6a;
           }
           iframe {
             width: 100%;
             height: 60vh;
             margin-top: 25px;
-            background: #fff;
+            background: #3e4e59;
+            border: none;
+            box-shadow: rgb(0 0 0 / 50%) 0px 0px 8px 3px;
           }
           .code {
             text-align: left;
             margin-top: 50px;
             tab-size: 4;
           }
-            
           .code pre {
-            background: #333;
             padding: 15px 20px;
             border-radius: 5px;
             white-space: pre-wrap;
+            color: #0f0;
           }
             
           .backButton {
@@ -58,27 +61,35 @@ class WwwNavigator extends LitElement {
             margin-bottom: 25px;
           }
           .backButton a {
-            color: white;
+            color: #1c2c37;
             font-weight: bold;
-            background: rgb(69, 165, 255);
-            padding: 5px;
+            background: #ffae00;
+            padding: 5px 10px;
             border-radius: 5px;
             text-decoration: none;
           }  
           .backButton a:hover {
-            text-decoration: underline;
+            background: #eebd00;
+            background: #cc7b00;
           }
           .header {
-            background: #1d8217;
+            background: #008000;
             border-radius: 10px 10px 0 0;
-            padding: 0 10px 20px;
+            padding: 0 10px 10px;
+            box-shadow: rgb(0 0 0 / 40%) 0px 1px 8px 0px;
+            z-index: 2;
           }
           .header .nav {
             margin-top: 20px;
           }
           .leftSide, .rightSide {
             padding: 10px;
-            background: #ad6a3d;
+            background: #ffae00;
+            box-shadow: rgb(0 0 0 / 40%) 0px 0px 8px 1px;
+            z-index: 1;
+            color: #000;
+            font-weight: bold;
+            font-size: 14px;
           }
           .leftSide .sideNav a {
             display: block;
@@ -92,7 +103,7 @@ class WwwNavigator extends LitElement {
             word-break: break-word;
           }
           .mainContent {
-            background: #3e4e59;
+            background: #1c2c37;
             overflow-y: auto;
             padding: 25px 15px;
           }
@@ -113,15 +124,21 @@ class WwwNavigator extends LitElement {
             line-height: 1.2;
           }
           .footer {
-            background: #1d8217;
-            padding: 15px 0 20px;
+            background: #008000;
+            padding: 15px 5px 20px;
             border-radius: 0 0 10px 10px;
+            box-shadow: rgb(0 0 0 / 40%) 0px -1px 8px 0px;
+            z-index: 2;
           }
           .footer a {
-            color: white;
-            margin: 0 15px;
+            color: #ddd;
+            margin: 5px 10px;
+            display: inline-block;
           }
           @media (min-width: 600px) {
+            .button {
+              font-size: 16px; 
+            }
             .layoutContainer {
               display: grid;
               grid-template: auto 1fr auto auto / auto 1fr;
@@ -158,6 +175,9 @@ class WwwNavigator extends LitElement {
             }
             .header, .footer {
               grid-column: 1 / 4;
+            }
+            .footer a {
+                margin: 0 20px;
             }
           }
         `;
@@ -241,6 +261,7 @@ class WwwNavigator extends LitElement {
                           ${content.showCode ? html`
                               <h3>${content.headline ? content.headline : content.type + '-Quellcode'}</h3>
                               <pre><code>${content.code}</code></pre>
+                              <br>
                           ` : ''}
                       `) : 'No source code available'}
                   </div>
@@ -253,7 +274,7 @@ class WwwNavigator extends LitElement {
               <div class="footer">
                   <a href="index.html">Home</a>
                   <a target="_blank" href="https://www.h-brs.de/de/impressum">Impressum (HBRS)</a>
-                  <a target="_blank" href="https://www.h-brs.de/de/datenschutz">Datenschutzerklärung (HBRS)</a>
+                  <a target="_blank" href="https://www.h-brs.de/de/datenschutz">Daten&shy;schutz&shy;erklärung (HBRS)</a>
               </div>
             </div>
           </div>

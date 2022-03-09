@@ -10,29 +10,29 @@ export class Menu extends LitElement {
       }
       .vertical button {
         display: block;
-        margin-top: 5px;
+        margin-top: 8px;
       }
       .menu.vertical button {
         display: inline;
-        flex-basis: 32%;
+        flex-basis: 30%;
       }
       button {
-        background: #6A709F;
-        color: black;
-        border-radius: 20px;
+        background: #2d3d48;
+        color: #0d0;
+        border-radius: 15px;
         text-decoration: none;
         padding: 10px;
-        margin: 0 2px;
+        margin: 0 4px;
         font-weight: bold;
         font-family: Verdana, Arial, sans-serif;
-        border: 2px outset #F9FBFC;
-        font-size: 12px;
+        font-size: 13px;
         cursor: pointer;
+        border: none;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
       }
       button:hover,
       button.active {
-        background: #fff;
-        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        background: #4e5e6a;
       }
       @media (min-width: 600px) {
         .menu.vertical {
