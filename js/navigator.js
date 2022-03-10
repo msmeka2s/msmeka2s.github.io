@@ -19,7 +19,7 @@ class WwwNavigator extends LitElement {
           }
           .button {
             background: #2d3d48;
-            color: #0d0;
+            color: #eee;
             border-radius: 15px;
             text-decoration: none;
             padding: 10px 16px;
@@ -95,6 +95,9 @@ class WwwNavigator extends LitElement {
             display: block;
             margin: 16px 0;
             max-width: 150px;
+          }
+          .rightSide {
+            text-align: left;
           }
           .rightSide p {
             margin: 0 0 10px;
@@ -254,7 +257,7 @@ class WwwNavigator extends LitElement {
                           ${content.visualizeOutput ? html`
                             <iframe srcdoc='${content.code}'></iframe>
                           ` : ''}
-                      `) : 'No source code available'}
+                      `) : 'Kein Quellcode verfügbar'}
                   </div>
                   <div class="code ${this.content ? '' : 'hidden'}">
                       ${this.content ? this.content.map(content => html`
@@ -263,13 +266,13 @@ class WwwNavigator extends LitElement {
                               <pre><code>${content.code}</code></pre>
                               <br>
                           ` : ''}
-                      `) : 'No source code available'}
+                      `) : 'Kein Quellcode verfügbar'}
                   </div>
               </div>
               <div class="rightSide">
                 ${this.references && this.references.length > 0 ? this.references.map(reference => html`
                   <p><small><a href="${reference}">${reference}</a></small></p>
-                `) : 'Additional Information: Links to external ressources'}
+                `) : 'Zusätzliche Informationen: Links zu externen Ressourcen'}
               </div>
               <div class="footer">
                   <a href="index.html">Home</a>
@@ -332,13 +335,23 @@ class WwwNavigator extends LitElement {
     }
 
     getInitialIntrotext() {
+        if (window.innerWidth < 600) {
+            this.getInitialIntrotextSmartphone();
+        } else if (window.innerWidth < 1200) {
+            this.getInitialIntrotextTablet();
+        } else {
+            this.getInitialIntrotextDesktop();
+        }
+    }
+
+    getInitialIntrotextSmartphone() {
         this.introText = html`
             <p>
                   Herzlich Willkommen auf meiner Webseite zur Präsentation des Semesterprojektes im Masterkurs Web Engineering. 
-                  Während des Semesters wurden insgesamt 12 Übungen bearbeitet, welche durch die Navigation auf der linken Seite 
+                  Während des Semesters wurden insgesamt 12 Übungen bearbeitet, welche durch die vorangehende Navigation 
                   betrachtet werden können. Das Ergebnis der jeweiligen Übungen ist dabei als ein eigenständiger <code>iframe</code> eingebunden. 
-                  Außerdem ist der Quellcode unterhalb der Ergebnisse sichtbar. Mögliche Referenzen bzw. Quellenangaben sind auf der rechten Seite
-                  dargestellt.
+                  Außerdem ist der Quellcode unterhalb der Ergebnisse sichtbar. Mögliche Referenzen bzw. Quellenangaben sind unterhalb 
+                  als eigenständiger Bereich dargestellt.
               </p>
               <p>
                   Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt, 
@@ -350,6 +363,50 @@ class WwwNavigator extends LitElement {
                   Um einzelne Teile der Webseite besser voneinander kapseln zu können und einen modularen Aufbau zu gewährleisten 
                   besteht die Webseite aus einzelnen Webkomponenten, die mithilfe des LitElement-Frameworks realisiert wurden.
               </p>
+        `;
+    }
+
+    getInitialIntrotextTablet() {
+        this.introText = html`
+            <p>
+                Herzlich Willkommen auf meiner Webseite zur Präsentation des Semesterprojektes im Masterkurs Web Engineering.
+                Während des Semesters wurden insgesamt 12 Übungen bearbeitet, welche durch die Navigation auf der linken Seite
+                betrachtet werden können. Das Ergebnis der jeweiligen Übungen ist dabei als ein eigenständiger <code>iframe</code> eingebunden.
+                Außerdem ist der Quellcode unterhalb der Ergebnisse sichtbar. Mögliche Referenzen bzw. Quellenangaben sind unterhalb
+                als eigenständiger Bereich dargestellt.
+            </p>
+            <p>
+                Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt,
+                welches über die Header-Navigation erreicht werden kann. Hier sind die einzelnen Vue-komponenten aus der
+                Übung mitsamt der verschiedenen Einstellungsmöglichkeiten sichtbar.
+            </p>
+            <p>
+                Die Webseite an sich wurde responsiv mit dem Grid bzw. Flexbox Layout erstellt und auch für mobile Ansichten optimiert.
+                Um einzelne Teile der Webseite besser voneinander kapseln zu können und einen modularen Aufbau zu gewährleisten
+                besteht die Webseite aus einzelnen Webkomponenten, die mithilfe des LitElement-Frameworks realisiert wurden.
+            </p>
+        `;
+    }
+
+    getInitialIntrotextDesktop() {
+        this.introText = html`
+            <p>
+                Herzlich Willkommen auf meiner Webseite zur Präsentation des Semesterprojektes im Masterkurs Web Engineering.
+                Während des Semesters wurden insgesamt 12 Übungen bearbeitet, welche durch die Navigation auf der linken Seite
+                betrachtet werden können. Das Ergebnis der jeweiligen Übungen ist dabei als ein eigenständiger iframe eingebunden.
+                Außerdem ist der Quellcode unterhalb der Ergebnisse sichtbar. Mögliche Referenzen bzw. Quellenangaben sind auf der
+                rechten Seite dargestellt.
+            </p>
+            <p>
+                Um die erstellten Vue-komponenten besser präsentieren zu können wurde hierfür ein Storybook angelegt,
+                welches über die Header-Navigation erreicht werden kann. Hier sind die einzelnen Vue-komponenten aus der
+                Übung mitsamt der verschiedenen Einstellungsmöglichkeiten sichtbar.
+            </p>
+            <p>
+                Die Webseite an sich wurde responsiv mit dem Grid bzw. Flexbox Layout erstellt und auch für mobile Ansichten optimiert.
+                Um einzelne Teile der Webseite besser voneinander kapseln zu können und einen modularen Aufbau zu gewährleisten
+                besteht die Webseite aus einzelnen Webkomponenten, die mithilfe des LitElement-Frameworks realisiert wurden.
+            </p>
         `;
     }
 
